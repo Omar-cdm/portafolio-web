@@ -1,0 +1,200 @@
+:root {
+    --black-bluish: #0B0C10;
+    --black-bluish-transparent: rgba(49, 56, 53, 0.2);
+    --green: rgba(0, 255, 136, 0.2);
+    --green-md: #00d981;
+    --white-green: rgb(164, 206, 164);
+    --white: rgb(225, 241, 225);
+}
+
+.contact__container {
+    padding: 20px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__title {
+    margin: 20px 0 16px 0;
+    text-align: center;
+}
+
+.contact__description {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact__form {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    opacity: 0;
+}
+
+.form__title {
+    margin: 0;
+}
+
+.form__text-name {
+    width: 300px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form__text-email {
+    width: 300px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.form__input-text {
+    grid-column: 1;
+    grid-row: 2;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 10px 12px 0;
+    color: var(--white);
+    font-family: "Nunito Sans", sans-serif; 
+    font-size: 18px;
+    background-color: var(--black-bluish-transparent);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+
+.form__input-text:hover {
+    outline: none;
+    border: 1px solid var(--green-md);
+    box-shadow: 0px 0px 10px -4px var(--green-md);
+}
+
+.form__input-text:focus {
+    outline: none;
+    border: 1px solid var(--green-md);
+    box-shadow: 0px 0px 10px -4px var(--green-md);
+}
+
+.form__input-email {
+    grid-column: 2;
+    grid-row: 2;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: "Nunito Sans", sans-serif; 
+    font-size: 18px;
+    margin-bottom: 12px;
+    background-color: var(--black-bluish-transparent);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    transition: 
+        outline 0.6s ease,
+        border 0.6s ease,
+        box-shadow 0.6s ease;
+}
+
+/*En esta posicion para evitar el borde rojo permanente, luego del click en caso invalido*/
+.form__input--touched:invalid {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px -4px red;
+}
+
+.form__input--touched:valid {
+    outline: none;
+    background-color: var(--black-bluish-transparent);
+    backdrop-filter: blur(10px);
+}
+
+.form__input-email:hover {
+    outline: none;
+    border: 1px solid var(--green-md);
+    box-shadow: 0px 0px 10px -4px var(--green-md);
+}
+
+.form__input-email:focus {
+    outline: none;
+    border: 1px solid var(--green-md);
+    box-shadow: 0px 0px 10px -4px var(--green-md);
+}
+
+.form__text-message {
+    width: 300px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.form__input-message {
+    grid-column: 1;
+    grid-row: 4;
+    position: relative;
+    z-index: 2;
+    width: 140%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: "Nunito Sans", sans-serif; 
+    font-size: 18px;
+    margin-bottom: 20px;
+    resize: none;
+    background-color: var(--black-bluish-transparent);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    transition:
+        outline 0.6s ease,
+        border 0.6s ease,
+        box-shadow 0.6s ease;
+}
+
+.form__input-message:hover {
+    outline: none;
+    border: 1px solid var(--green-md);
+    box-shadow: 0px 0px 10px -4px var(--green-md);
+}
+
+.form__input-message:focus {
+    outline: none;
+    border: 1px solid var(--green-md);
+    box-shadow: 0px 0px 10px -4px var(--green-md);
+}
+
+.form__button-container {
+    grid-column: 2;
+    grid-row: 4;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.form__button {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    font-family: "Nunito Sans", sans-serif; 
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--green-md);
+    color: var(--black-bluish);
+    border: transparent;
+    cursor: pointer;
+    transition: opacity 0.6s ease;
+}
+
+.form__button:hover {
+    opacity: 0.7;
+}

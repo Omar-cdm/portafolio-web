@@ -1,0 +1,131 @@
+:root {
+    --black-bluish: #0B0C10;
+    --black-bluish-transparent: rgba(49, 56, 53, 0.2);
+    --green: rgba(0, 255, 136, 0.2);
+    --green-md: #00d981;
+    --white-green: rgb(164, 206, 164);
+    --white: rgb(225, 241, 225);
+}
+
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__container {
+    min-height: 80vh;
+    padding: 0px 60px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero__image {
+    border-radius: 50%;
+    width: 300px;
+    height: 308px;
+    object-fit: cover;
+}
+
+.hero__content {
+    width: 380px;
+}
+
+.hero__text {
+    color: var(--white);
+    font-size: 34px;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: var(--green-md);
+    text-shadow: 0px -1px 4px var(--green-md);
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+.hero__description {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    font-weight: 500;
+}
+
+.hero__button--click {
+    display: grid;
+    width: 200px;
+    height: 40px;
+    place-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--green-md);
+    color: var(--white);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.hero__button--click:hover {
+    background-color: var(--green-md);
+    color: var(--black-bluish);
+    box-shadow: 0 0 14px -4px var(--green-md);
+    transform: scale(1.04);
+    transition: 
+        transform 0.8s ease,
+        background-color 0.8s ease;
+}
+
+.hero__button--click:not(:hover){
+    background-color: var(--black-bluish);
+    color: var(--white);
+    transform: scale(1);
+    transition: 
+        transform 0.8s ease,
+        background-color 0.8s ease;
+}
+
+/*ANIMATIONS*/
+
+@keyframes leftEntrance {
+    0% {
+        opacity: 0;
+        transform: translateX(-120%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rightEntrance {
+    0% {
+        opacity: 0;
+        transform: translateX(120%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.animation--left {
+    transition: transform 3s ease;
+    animation: leftEntrance 3s ease;
+}
+
+.animation--right {
+    animation: rightEntrance 3s ease;
+}
