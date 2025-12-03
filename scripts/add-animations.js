@@ -1,7 +1,7 @@
 let observer;
 const technologies = [80, 60, 50, 30];
 
-export function animationLeft() {
+export function animation() {
     const elements = document.querySelectorAll('.hero__image, .hero__content, .values__item, .contact__form');    
     observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -24,6 +24,8 @@ export function animationLeft() {
     })
 
 }
+
+//Codigo en analisis para integrar animacion a las barras de las card de tecnologias aprendidas.
 
 //export function increaseValues() {
     const valuesNum = document.querySelectorAll('.skill__percentage');

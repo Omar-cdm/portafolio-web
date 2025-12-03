@@ -326,17 +326,17 @@ span {
 }
 
 .robot__jump {
-    animation: jump 4s linear;
+    animation: jump 1s ease;
 }
 
 @keyframes jump {
-    80% {
+    0% {
         transform: translateY(0);
     }
-    85% {
+    5% {
         transform: translateY(-4px);
     }
-    90% {
+    10% {
         transform: translateY(0);
     }
 }

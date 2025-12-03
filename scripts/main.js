@@ -1,11 +1,15 @@
 import { renderHero, renderProjects, renderContact } from './ui.js';
-import { animationLeft } from './add-animations.js';
+import { animation } from './add-animations.js';
 
 const main = document.querySelector('.main');
 
 const navList = document.querySelector('.nav__list');
-let navLinks = document.querySelectorAll('.nav__link');
-console.log(navLinks)
+const robot = document.querySelector('.robot');
+robot.addEventListener("animationend", () => {
+    robot.classList.remove('robot__jump');
+});
+const navLinks = document.querySelectorAll('.nav__link');
+
 navList.addEventListener('click', (event) => {
     if (event.target.className == 'nav__list') return;
     event.preventDefault();
@@ -13,8 +17,8 @@ navList.addEventListener('click', (event) => {
     removeClass(navLinks);
     addClass(event)
     window.scrollTo(0, 0);
+    robot.classList.toggle('robot__jump');
 
-    
     switch (event.target.textContent) {
         case 'Inicio':
             main.appendChild(renderHero());
@@ -31,7 +35,7 @@ navList.addEventListener('click', (event) => {
             });
             break;
     }
-    animationLeft()
+    animation()
 })  
 main.appendChild(renderHero());
 
@@ -42,9 +46,9 @@ function removeClass(elements) {
 }
 
 function addClass(event) {
-    if (event.target.className != 'nav__list') {
+    if (event.target.className === 'nav__list') {
         event.target.classList.toggle('nav__link--active');
     }
 }
 
-animationLeft();
+animation();
