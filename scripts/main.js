@@ -2,24 +2,45 @@ import { renderHero, renderProjects, renderContact } from './ui.js';
 import { animation } from './add-animations.js';
 
 const main = document.querySelector('.main');
-
 const navList = document.querySelector('.nav__list');
 const robot = document.querySelector('.robot');
+const navLinks = document.querySelectorAll('.nav__link');
+
 robot.addEventListener("animationend", () => {
     robot.classList.remove('robot__jump');
 });
-const navLinks = document.querySelectorAll('.nav__link');
+
 
 navList.addEventListener('click', (event) => {
-    if (event.target.className == 'nav__list') return;
-    event.preventDefault();
-    main.innerHTML = "";
-    removeClass(navLinks);
-    addClass(event)
+    if (!event.target.classList.contains('nav__link')) return;
     window.scrollTo(0, 0);
-    robot.classList.toggle('robot__jump');
+    event.preventDefault();
 
-    switch (event.target.textContent) {
+    try {
+        robot.classList.toggle('robot__jump');
+        main.innerHTML = "";
+        removeClass(navLinks);
+        event.target.classList.toggle('nav__link--active');
+
+        renderSection(event.target.textContent);
+        animation();
+    } catch(error) { 
+        console.error("Ocurrio un error al renderizar la sección seleccionada", error.message);
+    }
+    
+}); 
+
+renderSection('Inicio')
+animation();
+
+function removeClass(elements) {
+    elements.forEach(element => {
+        element.classList.remove('nav__link--active');
+    });
+};
+
+function renderSection(sectionName) {
+    switch (sectionName) {
         case 'Inicio':
             main.appendChild(renderHero());
             break;
@@ -31,24 +52,7 @@ navList.addEventListener('click', (event) => {
             const inputEmail = document.querySelector('.form__input-email');
             inputEmail.addEventListener("blur", () => {
                 inputEmail.classList.add('form__input--touched');
-                console.log(inputEmail);
             });
             break;
-    }
-    animation()
-})  
-main.appendChild(renderHero());
-
-function removeClass(elements) {
-    elements.forEach(element => {
-        element.classList.remove('nav__link--active');
-    });
-}
-
-function addClass(event) {
-    if (event.target.className === 'nav__list') {
-        event.target.classList.toggle('nav__link--active');
-    }
-}
-
-animation();
+    };
+};
