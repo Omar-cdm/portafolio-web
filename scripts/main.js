@@ -1,6 +1,3 @@
-import { renderHero, renderProjects, renderContact } from './ui.js';
-import { animation } from './add-animations.js';
-
 const main = document.querySelector('.main');
 const navList = document.querySelector('.nav__list');
 const robot = document.querySelector('.robot');
@@ -23,15 +20,20 @@ navList.addEventListener('click', (event) => {
         event.target.classList.toggle('nav__link--active');
 
         renderSection(event.target.textContent);
-        animation();
     } catch(error) { 
         console.error("Ocurrio un error al renderizar la sección seleccionada", error.message);
     }
     
 }); 
 
-renderSection('Inicio')
-animation();
+import('./ui.js')
+.then(module => {
+    main.innerHTML = module.renderHero('Inicio');
+    import('./add-animations.js')
+    .then(module => {
+        module.animation();
+    });
+});
 
 function removeClass(elements) {
     elements.forEach(element => {
@@ -40,19 +42,26 @@ function removeClass(elements) {
 };
 
 function renderSection(sectionName) {
-    switch (sectionName) {
-        case 'Inicio':
-            main.appendChild(renderHero());
-            break;
-        case 'Proyectos':
-            main.appendChild(renderProjects());
-            break;
-        case 'Contacto':
-            main.appendChild(renderContact());
-            const inputEmail = document.querySelector('.form__input-email');
-            inputEmail.addEventListener("blur", () => {
-                inputEmail.classList.add('form__input--touched');
-            });
-            break;
-    };
+    import('./ui.js')
+    .then(module => {
+        switch (sectionName) {
+            case 'Inicio':
+                main.innerHTML = module.renderHero();
+                break;
+            case 'Proyectos':
+                main.innerHTML = module.renderProjects();
+                break;
+            case 'Contacto':
+                main.innerHTML = module.renderContact();
+                const inputEmail = document.querySelector('.form__input-email');
+                inputEmail.addEventListener("blur", () => {
+                    inputEmail.classList.add('form__input--touched');
+                });
+                break;
+        }
+        import('./add-animations.js')
+        .then(module => {
+            module.animation();
+        });
+    });
 };

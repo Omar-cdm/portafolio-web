@@ -29,10 +29,12 @@
     width: 300px;
     height: 308px;
     object-fit: cover;
+    opacity: 0;
 }
 
 .hero__content {
     width: 380px;
+    opacity: 0;
 }
 
 .hero__text {
@@ -123,9 +125,9 @@
 
 .animation--left {
     transition: transform 3s ease;
-    animation: leftEntrance 3s ease;
+    animation: leftEntrance 3s ease forwards;
 }
 
 .animation--right {
-    animation: rightEntrance 3s ease;
+    animation: rightEntrance 3s ease forwards;
 }
