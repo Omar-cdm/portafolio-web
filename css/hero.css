@@ -131,3 +131,19 @@
 .animation--right {
     animation: rightEntrance 3s ease forwards;
 }
+
+@media screen and (max-width: 360px) {
+    .hero__container {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        padding: 0px 14px;
+        gap: 30px;
+    }
+    .hero__image {
+        width: 250px;
+        height: 258px;
+    }
+    .hero__content {
+        width: auto;
+    }
+}
