@@ -1,12 +1,14 @@
 export function elementHeroContainer() {
     return `
         <div class="hero__container">
-            <img class="hero__image" src="./assets/image-profile.jpg">
+            <div class="hero__image-container">
+                <img class="hero__image" src="./assets/img-profile-3.webp">
+            </div>
             <div class="hero__content">
-            <p class="hero__text">Hola, soy</p>
-            <h1 class="hero__title">Omar Rodriguez</h1>
-            <p class="hero__description">Desarrollador web en formación que ama la tecnologia y el software</p>            
-            <a href="./" class="hero__button--click">Ver mis proyectos</a>
+                <p class="hero__text">Hola, soy</p>
+                <h1 class="hero__title">Omar Rodriguez</h1>
+                <p class="hero__description">Desarrollador web en formación que ama la tecnologia y el software</p>            
+                <a href="./" class="hero__button--click">Ver mis proyectos</a>
             </div>
         </div>
     `;

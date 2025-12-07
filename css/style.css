@@ -79,6 +79,7 @@ span {
     height: 100%;
     overflow: hidden;
     position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
 }
@@ -101,7 +102,7 @@ span {
     font-weight: 900;
     text-shadow: 0px -1px 4px var(--white-green);
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     transition: transform 1s ease;
 }
 
@@ -171,8 +172,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
-    box-shadow: 0px 0px 4px 0px var(--green-md);
+    z-index: 4;
+    box-shadow: 0px 0px 6px 1px var(--green-md);
     transform: rotate(10deg);
     transition: transform 1s ease;
 }
@@ -358,6 +359,35 @@ span {
         font-size: 26px;
     }
     .robot {
-        left: 104px;
+        width: 26px;
+        height: 16px;
+        left: 107px;
+        top: 9px;
+        padding: 1px;
+        box-shadow: 0px 0px 2px 0px var(--green-md);
+    }
+    .ear__left {
+        top: 22%;
+        width: 6px;
+        height: 6px;
+        left: -5px;
+    }
+    .ear__right {
+        width: 6px;
+        height: 6px;
+        top: 22%;
+        left: 21px;
+    }
+    .top-antenna {
+        top: -6px;
+        left: 9px;
+        width: 4px;
+    }
+    .antenna {
+        left: 3px;
+    }
+    .robot__eyes {
+        margin-top: 1px;
+        height: 5px;
     }
 }
