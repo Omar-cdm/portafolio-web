@@ -184,3 +184,70 @@
     transition: transform 1.5s ease;
     animation: scale 1.5s ease forwards;
 }
+
+@media screen and (max-width: 390px) {
+    .about__container{
+        margin-top: 0;
+        padding: 0 16px;
+
+    }
+    .about__title {
+        margin-bottom: 8px;
+    }
+    .about__intro {
+        text-align: left;
+
+    }
+    .quote {
+        margin: 48px 0;
+    }
+    .quote__subtitle {
+        margin: 0;
+    }
+    .values {
+        margin-top: 0px;
+    }
+    .values__title {
+        margin-bottom: 24px;
+    }
+    .values__item {
+        padding: 8px;
+        height: 54px;
+    }
+    .values__icon {
+        width: 18px;
+        margin-right: 8px;
+    }
+    .values__item strong {
+        width: 80px;
+        margin-right: 12px;
+    }
+    .values__item span {
+        width: 140px;
+    }
+    .skills {
+        margin: 34px 0px 20px 0px;
+    }
+    .skills__subtitle {
+        margin: 0px 0px 26px 0px;
+    }
+    .skills__list {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 12px;
+        justify-items: center;
+    }
+    .skill {
+        width: 100%;
+        height: 78px;
+        padding: 4px;
+    }
+    .skill__name {
+        margin: 4px 0 8px 0;
+    }
+    .skill p {
+        font-size: 14px;
+    }
+    .skill__percentage {
+        font-size: 14px;
+    }
+}

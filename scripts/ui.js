@@ -8,8 +8,8 @@ const values = [
 ];
 
 const skills = [
-    { title: "HTML5 & Semántica", class: "skill__progress skill__progress--html", percentage: "80" },
-    { title: "CSS3 & Diseño", class: "skill__progress skill__progress--css", percentage: "70" },
+    { title: "HTML5", class: "skill__progress skill__progress--html", percentage: "80" },
+    { title: "CSS3", class: "skill__progress skill__progress--css", percentage: "70" },
     { title: "JavaScript", class: "skill__progress skill__progress--js", percentage: "50" },
     { title: "Python", class: "skill__progress skill__progress--python", percentage: "30" }, 
 ];

@@ -7,7 +7,7 @@ export function elementHeroContainer() {
             <div class="hero__content">
                 <p class="hero__text">Hola, soy</p>
                 <h1 class="hero__title">Omar Rodriguez</h1>
-                <p class="hero__description">Desarrollador web en formación que ama la tecnologia y el software</p>            
+                <p class="hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software</p>            
                 <a href="./" class="hero__button--click">Ver mis proyectos</a>
             </div>
         </div>
