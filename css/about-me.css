@@ -34,7 +34,7 @@
     padding: 24px;
     box-sizing: border-box;
     border-radius: 8px;
-
+    border-left: 6px solid var(--white-green);
 }
 
 .quote__subtitle {
@@ -185,7 +185,7 @@
     animation: scale 1.5s ease forwards;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
     .about__container{
         margin-top: 0;
         padding: 0 16px;
@@ -195,7 +195,7 @@
         margin-bottom: 8px;
     }
     .about__intro {
-        text-align: left;
+        text-align: center;
 
     }
     .quote {
@@ -243,6 +243,9 @@
     }
     .skill__name {
         margin: 4px 0 8px 0;
+    }
+    .skill__bar {
+        height: 4px;
     }
     .skill p {
         font-size: 14px;
