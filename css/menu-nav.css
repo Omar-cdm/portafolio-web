@@ -13,3 +13,30 @@
     display: grid;
     place-items: center;
 }
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__list li {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.list__link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700px;
+    color: var(--white);
+}
+
+.list__link--active {
+    color: var(--green-md)
+}
