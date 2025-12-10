@@ -1,0 +1,15 @@
+:root {
+    --black-bluish: #0B0C10;
+    --black-bluish-transparent: rgba(49, 56, 53, 0.2);
+    --green: rgba(0, 255, 136, 0.2);
+    --green-md: #00d981;
+    --white-green: rgb(164, 206, 164);
+    --white: rgb(225, 241, 225);
+}
+
+.menu {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}

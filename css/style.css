@@ -408,13 +408,14 @@ span {
         display: none;
     }
     .logo__title {
+        top: 10px;
         font-size: 26px;
     }
     .robot {
         width: 26px;
         height: 16px;
         left: 106px;
-        top: 6px;
+        top: 8px;
         padding: 1px;
         box-shadow: 0px 0px 2px 0px var(--green-md);
     }
@@ -445,6 +446,8 @@ span {
     .header__hamburger {
         width: 30px;
         height: 100%;
+        background-color: transparent;
+        border: transparent;
         display: flex;
         flex-direction: column;
         gap: 6px;
