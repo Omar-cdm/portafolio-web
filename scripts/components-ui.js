@@ -80,3 +80,10 @@ export function elementFormContact() {
         </form>
     `;
 };
+export function renderMenuNav() {
+    return `
+      <section class="menu">
+        
+      </section>
+    `
+}

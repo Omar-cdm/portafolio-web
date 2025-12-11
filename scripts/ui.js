@@ -98,23 +98,3 @@ export function renderContact() {
       </section> 
     `;
 }
-
-export function renderMenuNav() {
-    return `
-      <section class="menu">
-        <nav class="menu__nav">
-            <ul class="menu__list">
-                <li>
-                    <a href="./" class="list__link">Inicio</a>        
-                </li>
-                <li>
-                    <a href="./" class="list__link">Proyectos</a>
-                </li>
-                <li>
-                    <a href="./" class="list__link">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-      </section>
-    `
-}

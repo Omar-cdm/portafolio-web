@@ -3,7 +3,8 @@ const navList = document.querySelector('.nav__list');
 const robot = document.querySelector('.robot');
 const navLinks = document.querySelectorAll('.nav__link');
 const buttomHamburger = document.querySelector('.header__hamburger');
-const footer = document.querySelector('.footer__container');
+const menuNav = document.querySelector('.menu__nav');
+const menuList = document.querySelector('.menu__list');
 
 let sectionIndex = 1;
 let controllerClick = 0;
@@ -30,44 +31,30 @@ navList.addEventListener('click', (event) => {
 });
 
 buttomHamburger.addEventListener("click", () => {
-    footer.style.display = 'none';
-    import('./ui.js')
-        .then(module => {
-            if (controllerClick === 0) {
-                controllerClick = 1;
-                main.innerHTML = module.renderMenuNav();
-                let section = document.querySelector('.menu');
-                section.style.display = 'grid';
-                const menuList = document.querySelector('.menu__list');
-                menuList.addEventListener('click', (event) => {
-                    if (!event.target.classList.contains('list__link')) return;
-                    event.preventDefault();
+    if (controllerClick === 0) {
+        controllerClick = 1;
+        menuNav.style.opacity = '1';
+        menuNav.style.top = '0px';
+    } else {
+        controllerClick = 0;
+        menuNav.style.top = '-80vh';
+        menuNav.style.opacity = '0';
+    };
+});
 
-                    try {
-                        robot.classList.toggle('robot__jump');
-                        main.innerHTML = "";
-                        renderSection(event.target.textContent);
-                        controllerClick = 0;
-                    } catch(error) { 
-                        console.error("Ocurrio un error al renderizar la sección seleccionada", error.message);
-                    };
-                });
-            } else {
-                footer.style.display = 'flex';
-                controllerClick = 0;
-                if (sectionIndex === 1) {
-                    main.innerHTML = module.renderHero();
-                } else if (sectionIndex == 2) {
-                    main.innerHTML = module.renderProjects();
-                } else if (sectionIndex === 3) {
-                    main.innerHTML = module.renderContact();
-                };
-            };
-            import('./add-animations.js')
-            .then(module => {
-                module.animation();
-            });
-        });
+menuList.addEventListener('click', (event) => {
+    if (!event.target.classList.contains('list__link')) return;
+    event.preventDefault();
+
+    try {
+        robot.classList.toggle('robot__jump');
+        main.innerHTML = "";
+        renderSection(event.target.textContent);
+        menuNav.style.opacity = '0';
+        menuNav.style.top = '-80vh';
+    } catch(error) { 
+        console.error("Ocurrio un error al renderizar la sección seleccionada", error.message);
+    }
 });
 
 import('./ui.js')
@@ -83,15 +70,12 @@ function removeClass(elements) {
     elements.forEach(element => {
         if (element.classList.contains( 'nav__link--active')) {
             element.classList.remove('nav__link--active');   
-        } else if (element.classList.contains('list__link--active')) {
-            element.classList.remove('list__link--active');
         }
     });
 };
 
 function renderSection(sectionName) {
-    footer.style.display = 'flex';
-    controllerClick = 1;
+    controllerClick = 0;
     import('./ui.js')
     .then(module => {
         switch (sectionName) {
