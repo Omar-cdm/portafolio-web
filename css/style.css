@@ -384,7 +384,7 @@ span {
 
     h4 {
         margin-top: 24px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     p { 
@@ -468,10 +468,10 @@ span {
         gap: 10px;
     }
     .footer__text {
-        font-size: 14px;
+        font-size: 16px;
     }
     .footer__red {
-        width: 22px;
+        width: 24px;
         margin-right: 8px;
     }
     .footer__credits {

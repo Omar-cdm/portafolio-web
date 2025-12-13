@@ -85,7 +85,14 @@
     .projects__container {
         padding: 0 16px;
     }
+    .projects__title {
+        margin: 28px 0 14px;
+    }
+    .projects__description {
+        margin: 0;
+    }
     .projects__grid {
+        margin-top: 20px;
         column-count: 1;
     }
     .project__image {
