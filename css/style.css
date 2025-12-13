@@ -267,7 +267,7 @@ span {
 }
 
 .main {
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
 }
 
 .footer {

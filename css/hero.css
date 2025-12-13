@@ -71,6 +71,7 @@
     display: grid;
     width: 180px;
     height: 38px;
+    font-family: "Nunito Sans", sans-serif; 
     place-items: center;
     border-radius: 8px;
     border: 1px solid var(--green-md);
@@ -131,12 +132,12 @@
 }
 
 .animation--left {
-    transition: transform 3s ease;
-    animation: leftEntrance 3s ease forwards;
+    transition: transform 1.4s ease;
+    animation: leftEntrance 1.4s ease forwards;
 }
 
 .animation--right {
-    animation: rightEntrance 3s ease forwards;
+    animation: rightEntrance 1.4s ease forwards;
 }
 
 @media screen and (max-width: 420px) {

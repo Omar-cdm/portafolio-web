@@ -8,7 +8,7 @@ export function elementHeroContainer() {
                 <p class="hero__text">Hola, soy</p>
                 <h1 class="hero__title">Omar Rodriguez</h1>
                 <p class="hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software</p>            
-                <a href="./" class="hero__button--click">Ver mis proyectos</a>
+                <button class="hero__button--click">Ver mis proyectos</button>
             </div>
         </div>
     `;
@@ -68,22 +68,15 @@ export function elementArticle(title, description, img, technologies) {
 export function elementFormContact() {
     return `
         <form class="contact__form" action="https://formspree.io/f/xdkqzykq" method="POST">
-            <label class="form__text-name">Nombre</label>
-            <input class="form__input-text" type="text" name="nombre" required></input>
-            <label class="form__text-email">Email</label>
-            <input class="form__input-email" type="email" name="email" required></input>
-            <label class="form__text-message">Mensaje</label>
-            <textarea class="form__input-message" name="mensaje" rows="5" required></textarea>
+            <label class="form__text-name" for="text">Nombre</label>
+            <input class="form__input-text" type="text" name="nombre" id="text" required></input>
+            <label class="form__text-email" for="email">Email</label>
+            <input class="form__input-email" type="email" name="email" id="email" autocomplete="on" required></input>
+            <label class="form__text-message" for="message">Mensaje</label>
+            <textarea class="form__input-message" name="mensaje" id="message" rows="5" required></textarea>
             <div class="form__button-container">
                 <button class="form__button" type="submit">Enviar</button>
             </div>
         </form>
     `;
 };
-export function renderMenuNav() {
-    return `
-      <section class="menu">
-        
-      </section>
-    `
-}

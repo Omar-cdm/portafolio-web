@@ -80,3 +80,15 @@
     gap: 10px;
     font-weight: 700;
 }
+
+@media screen and (max-width: 420px) {
+    .projects__container {
+        padding: 0 16px;
+    }
+    .projects__grid {
+        column-count: 1;
+    }
+    .project__image {
+        width: 220px;
+    }
+}

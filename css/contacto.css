@@ -200,3 +200,34 @@
 .form__button:hover {
     opacity: 0.7;
 }
+
+@media screen and (max-width: 420px) {
+    .contact__container {
+        padding: 0 16px;
+    }
+    .contact__form {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .form__input-text {
+        width: 100%;
+    }
+    .form__input-email {
+        width: 100%;
+    }
+    .form__input-message  {
+        width: 100%;
+    }
+    .form__button-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .form__button {
+        height: 40px;
+        position: static;
+        border-radius: 12px;
+    }
+}

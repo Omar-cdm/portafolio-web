@@ -16,7 +16,7 @@
     position: fixed;
     z-index: 3;
     opacity: 0;
-    top: 70px;
+    top: -100vh;
     left: 0px;
 }
 
@@ -27,14 +27,15 @@
     border: transparent;
     position: absolute;
     z-index: 1;
-    top: 10px;
-    right: 30px;
+    top: 14px;
+    right: 17px;
 }
 
 .exit__line-left {
     width: 24px;
     height: 2px;
     border-radius: 4px;
+    position: absolute;
     background-color: var(--white);
     transform: rotate(48deg);
 }
@@ -44,8 +45,9 @@
     height: 2px;
     border-radius: 4px;
     background-color: var(--white);
+    position: absolute;
     z-index: 1;
-    transform: rotate(-48deg) translateX(1px) translateY(-1px);
+    transform: rotate(-48deg) translateX(0px) translateY(-0px);
 }
 
 .menu__list {
