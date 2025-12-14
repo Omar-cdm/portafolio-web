@@ -140,7 +140,7 @@
     animation: rightEntrance 1.4s ease forwards;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .hero__container {
         width: auto;
         height: 82vh;

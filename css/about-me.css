@@ -92,6 +92,7 @@
 .skills__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
     grid-gap: 20px;
 }
 
@@ -185,7 +186,7 @@
     animation: scale 1.5s ease forwards;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .about__container{
         margin-top: 0;
         padding: 0 16px;

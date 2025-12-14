@@ -40,10 +40,6 @@ export function renderHero() {
             Soy un joven apasionado por la tecnología y enfocado en el desarrollo frontend. Busco constantemente oportunidades para aprender de otros desarrolladores, compartir conocimientos y colaborar en proyectos.
           </p>
 
-          <p class="about__intro">
-            Actualmente, me especializo en crear soluciones web sencillas y de alto impacto, como el diseño e implementación de landing pages rápidas para negocios. Estas páginas incluyen una clara llamada a la acción mediante un botón de contacto directo a WhatsApp para generar resultados inmediatos.
-          </p>
-
           ${blockquote}
           <div class="values">
             <h2 class="values__title">Mis valores</h2>
@@ -85,7 +81,7 @@ export function renderContact() {
         <div class="contact__container">
           <h1 class="contact__title">Contactame</h1>
           <p class="contact__description">
-            Si en tu proyecto de desarrollo frontend necesitas un par de manos extra, estoy listo para participar. También me encargo de crear landing pages sencillas y optimizadas para pequeños comerciantes.
+            Si en tu proyecto de desarrollo frontend necesitas un par de manos extra, estoy listo para participar.
           </p>
           ${form}
         </div>
