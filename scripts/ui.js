@@ -33,7 +33,7 @@ export function renderHero() {
           <h1 class="about__title">Sobre mi</h1>
 
           <p class="about__intro center">
-            Hola, soy Omar Junior Rodríguez Pérez, un aprendiz de Desarrollo Web autodidacta de 23 años, residente en Barramquilla, Colombia.
+            Hola, soy Omar Junior Rodríguez Pérez, un aprendiz de Desarrollo Web autodidacta de 23 años, residente en Barranquilla, Colombia.
           </p>
 
           <p class="about__intro">
