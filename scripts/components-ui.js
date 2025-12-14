@@ -1,3 +1,13 @@
+const projects = [
+    { title: "Super Pokemon", description: "Mi primer proyecto desarrollado localmente usando HTML, CSS y JavaScript. Un juego sencillo basado en el juego Super Mokepon del curso de programación basica de Platzi, con una logica mejorada y ataques dinamicos en el campo de batalla, brindando una experiencia entretenida y divertida.", img: "./assets/pokrmon-2.webp", technologies: "HTML5 CSS3 JavaScript" },
+    { title: "Portafolio Personal", description: "Este mismo portfolio en donde use HTML, CSS y  JavaScript, en el cual comparto sobre mi, mis conocimientos, mis proyectos y mi contacto para conectar con la comunidad del desarrollo de web.", img: "./assets/portafolio.webp", technologies: "HTML5 CSS3 JavaScript" },
+    { title: "Free Math", description: "Una apk hecha con MIT App Inventor con bloques de codigo. Una forma de hacer apk para Android e IOS sin escribir codigo, pero aplicando la logica necesaria para el buen funcionamiento de la apk. Free Math es una apk pensada facilitar el calculo de angulos y longitud de lados de un triangulo implementando formulas trigonometricas.", img: "./assets/pokemon3.webp", technologies: "MIT App Inventor" },
+];
+
+const projectsElements = projects.map(project => elementArticle(project.title, project.description, project.img, project.technologies));
+
+export const newprojectsElements = projectsElements.join("");
+
 export function elementHeroContainer() {
     return `
         <div class="hero__container">
@@ -19,7 +29,7 @@ export function elementBlockquote() {
         <blockquote class="quote">
           <h2 class="quote__subtitle">"Nunca pares de aprender"</h2>
           <p class="quote__text">
-            Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje, creando en mi el habito y la necesidad de siempre querer aprender temas nuevos acerca del desarrollo web.
+            Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje. Creando en mi el habito y la necesidad de siempre querer aprender temas nuevos acerca del desarro web.
           </p>
           <cite class="quote__author">— Platzi</cite>
         </blockquote>
@@ -48,7 +58,7 @@ export function elementSkill(title, classBar, percentage) {
     `;
 }
 
-export function elementArticle(title, description, img, technologies) {
+function elementArticle(title, description, img, technologies) {
     return `
         <article class="project">
             <h2 class="project__title">${title}</h2>

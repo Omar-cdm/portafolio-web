@@ -1,9 +1,9 @@
-import { elementHeroContainer, elementBlockquote, elementLiValue, elementSkill, elementArticle, elementFormContact } from './components-ui.js';
+import { elementHeroContainer, elementBlockquote, elementLiValue, elementSkill, newprojectsElements, elementFormContact } from './components-ui.js';
 
 const values = [
     { name: "Dedicación", description: "Comprometido con mi aprendizaje diario" },
     { name: "Curiosidad", description: "Siempre explorando nuevas tecnologias." },
-    { name: "Comunidad", description: "Aprendiendo y compartiendo" },
+    { name: "Pro-activo", description: "Aprendiendo y haciendo" },
     { name: "Creatividad", description: "Buscando soluciones innovadoras" }, 
 ];
 
@@ -12,12 +12,6 @@ const skills = [
     { title: "CSS3", class: "skill__progress skill__progress--css", percentage: "70" },
     { title: "JavaScript", class: "skill__progress skill__progress--js", percentage: "50" },
     { title: "Python", class: "skill__progress skill__progress--python", percentage: "30" }, 
-];
-
-const projects = [
-    { title: "Super Pokemon", description: "Mi primer proyecto desarrollado localmente usando HTML, CSS y JavaScript. Un juego sencillo basado en el juego Super Mokepon del curso de programación basica de Platzi. Con una logica mejorada y ataques dinamicos en el campo de batalla, brindando una experiencia entretenida y divertida.", img: "./assets/pokrmon-2.webp", technologies: "HTML5 CSS3 JavaScript" },
-    { title: "Portafolio Personal", description: "Este mismo portfolio en donde use HTML, CSS y un poco de JavaScript, en el cual comparto sobre mi, mis conocimientos, mis proyectos y mi contacto para conectar con la comunidad y el ambiente del desarrollo web.", img: "./assets/portafolio.webp", technologies: "HTML5 CSS3 JavaScript" },
-    { title: "Free Math", description: "Una apk hecha con MIT App Inventor, con bloques de codigo una forma de hacer apk para Android e IOS sin escribir codigo solo pero aplicando la logica necesaria para el buen funcionamiento de la apk. Free Math es una apk pensada facilitar el calculo de angulos y longitud de lados de un triangulo implementando formulas trigonometricas.", img: "./assets/pokemon3.webp", technologies: "MIT App Inventor" },
 ];
 
 const heroContainer = elementHeroContainer();
@@ -38,13 +32,18 @@ export function renderHero() {
         <div class="about__container">
           <h1 class="about__title">Sobre mi</h1>
 
-          <p class="about__intro">
-            Mi nombre es Omar Junior Rodriguez Perez, tengo 23 y soy de Barranquilla-Colombia. Actualmente estoy formandome como <strong>Desarrollador web</strong> de forma autodidacta.
+          <p class="about__intro center">
+            Hola, soy Omar Junior Rodríguez Pérez, un aprendiz de Desarrollo Web autodidacta de 23 años, residente en Barramquilla, Colombia.
           </p>
 
           <p class="about__intro">
-            Soy un joven apasionado por la tecnologia, me gusta aprender temas de desarrollo web y bunas practicas. Ademas del <strong>Desarrollo Web</strong> tambien me gusta aprender de <strong>Linux</strong> en tiempos libres, me considero una persona que ama a Linux y el software Open Source.
+            Soy un joven apasionado por la tecnología y enfocado en el desarrollo frontend. Busco constantemente oportunidades para aprender de otros desarrolladores, compartir conocimientos y colaborar en proyectos.
           </p>
+
+          <p class="about__intro">
+            Actualmente, me especializo en crear soluciones web sencillas y de alto impacto, como el diseño e implementación de landing pages rápidas para negocios. Estas páginas incluyen una clara llamada a la acción mediante un botón de contacto directo a WhatsApp para generar resultados inmediatos.
+          </p>
+
           ${blockquote}
           <div class="values">
             <h2 class="values__title">Mis valores</h2>
@@ -65,21 +64,18 @@ export function renderHero() {
 }
 
 export function renderProjects() {
-    const projectsElements = projects.map(project => elementArticle(project.title, project.description, project.img, project.technologies));
-    const newprojectsElements = projectsElements.join("");
-  
     return `
-      <section class="proyects">
-        <div class="projects__container">
-          <h1 class="projects__title">Mis Proyectos de Práctica</h1>
-          <p class="projects__description">
-            Cada proyecto representa el progreso de mi aprendizaje, implementando conceptos aprendidos y buenas practicas aprendidas, ya que siempre busco hacer codigo de calidad y facil de mantener.
-          </p>
-          <div class="projects__grid">
-            ${newprojectsElements}
+        <section class="proyects">
+          <div class="projects__container">
+            <h1 class="projects__title">Mis Proyectos de Práctica</h1>
+            <p class="projects__description">
+              Cada proyecto representa el progreso de mi aprendizaje, implementando conceptos aprendidos y buenas practicas aprendidas, ya que siempre busco hacer codigo de calidad y facil de mantener.
+            </p>
+            <div class="projects__grid">
+              ${newprojectsElements}
+            </div>
           </div>
-        </div>
-      </section> 
+        </section> 
     `;
 }
 
@@ -87,11 +83,9 @@ export function renderContact() {
     return `
       <section class="contact">
         <div class="contact__container">
-          <h1 class="contact__title">¿Te gustaría conectar?</h1>
+          <h1 class="contact__title">Contactame</h1>
           <p class="contact__description">
-            Siempre estoy buscando aprender de otros desarrolladores,
-            compartir experiencias y tal vez colaborar en proyectos
-            interesantes.
+            Si en tu proyecto de desarrollo frontend necesitas un par de manos extra, estoy listo para participar. También me encargo de crear landing pages sencillas y optimizadas para pequeños comerciantes.
           </p>
           ${form}
         </div>

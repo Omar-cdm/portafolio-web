@@ -210,6 +210,7 @@
     }
     .contact__description {
         margin: 0px 0px 30px 0px;
+        text-align: center;
     }
     .contact__form {
         width: 90%;
@@ -244,6 +245,7 @@
     }
     .form__button-container {
         width: 100%;
+        margin: 0;
         justify-content: center;
     }
     .form__button {

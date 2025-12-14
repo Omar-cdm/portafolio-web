@@ -65,8 +65,11 @@ import('./ui.js')
         module.animation();
     });
     const linkProject = document.querySelector(".hero__button--click");
-        linkProject.addEventListener("click", () => {
+    linkProject.addEventListener("click", () => {
+        main.innerHTML = "";
         main.innerHTML = module.renderProjects();
+        removeClass(menuLinks);
+        menuLinks[1].classList.toggle('list__link--active');
     });
 });
 
@@ -88,7 +91,10 @@ function renderSection(sectionName) {
                 main.innerHTML = module.renderHero();
                 const linkProject = document.querySelector(".hero__button--click");
                 linkProject.addEventListener("click", () => {
+                    main.innerHTML = "";
                     main.innerHTML = module.renderProjects();
+                    removeClass(menuLinks);
+                    menuLinks[1].classList.toggle('list__link--active');
                 });
                 break;
             case 'Proyectos':
