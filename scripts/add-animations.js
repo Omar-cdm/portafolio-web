@@ -16,7 +16,7 @@ export function animation() {
             }
         })           
     }, {
-        threshold: 0.2
+        threshold: 0.4
     });
     elements.forEach(element => {
         observer.observe(element);
