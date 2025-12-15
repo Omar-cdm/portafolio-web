@@ -57,7 +57,7 @@
 .hero__title {
     font-size: 3rem;
     color: var(--green-md);
-    text-shadow: 0px -2px 20px var(--green-md);
+    text-shadow: 0px -2px 40px var(--green-md);
     font-weight: 700;
     margin: 0;
     padding: 0;
