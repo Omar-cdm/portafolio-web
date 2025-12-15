@@ -1,11 +1,11 @@
 let observer;
 
 export function animation() {
-    const elements = document.querySelectorAll('.hero__image, .hero__content, .values__item, .contact__form');    
+    const elements = document.querySelectorAll('.hero__image-container, .hero__content, .values__item, .contact__form');    
     observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.classList.contains('hero__image')) {
+                if (entry.target.classList.contains('hero__image-container')) {
                     entry.target.classList.add('animation--left');
                 } else if (entry.target.classList.contains('hero__content')) {
                     entry.target.classList.add('animation--right');
