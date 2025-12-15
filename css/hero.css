@@ -15,7 +15,7 @@
 }
 
 .hero__container {
-    height: calc(100lvh - 80px);
+    height: calc(100svh - 80px);
     padding: 0px 60px;
     box-sizing: border-box;
     display: flex;
@@ -146,7 +146,7 @@
 @media screen and (max-width: 430px) {
     .hero__container {
         width: auto;
-        height: calc(100lvh - 70px);
+        height: calc(100svh - 70px);
         flex-direction: column;
         padding: 0px 14px;
         gap: 30px;
