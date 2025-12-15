@@ -267,12 +267,11 @@ span {
 }
 
 .main {
-    min-height: calc(100dvh - 70px);
+    min-height: calc(100lvh - 70px);
 }
 
 .footer {
     width: 100%;
-    margin-top: 40px;
     padding: 1% 4%;
     box-sizing: border-box;
 }

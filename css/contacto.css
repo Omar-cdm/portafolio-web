@@ -8,6 +8,7 @@
 }
 
 .contact__container {
+    margin-bottom: 40px;
     padding: 20px 60px;
     box-sizing: border-box;
     display: flex;
