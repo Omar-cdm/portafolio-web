@@ -28,7 +28,7 @@ export function elementBlockquote() {
         <blockquote class="quote">
           <h2 class="quote__subtitle">"Nunca pares de aprender"</h2>
           <p class="quote__text">
-            Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje. Creando en mi el habito y la necesidad de siempre querer aprender temas nuevos acerca del desarro web.
+            Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje. Creando en mi el habito y la necesidad de siempre querer aprender temas nuevos acerca del desarrollo web.
           </p>
           <cite class="quote__author">— Platzi</cite>
         </blockquote>
