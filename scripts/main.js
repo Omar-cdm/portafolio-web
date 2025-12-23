@@ -69,7 +69,9 @@ import('./ui.js')
         main.innerHTML = "";
         main.innerHTML = module.renderProjects();
         removeClass(menuLinks);
+        removeClass(navLinks);
         menuLinks[1].classList.toggle('list__link--active');
+        navLinks[1].classList.toggle('nav__link--active');
     });
 });
 
@@ -94,7 +96,9 @@ function renderSection(sectionName) {
                     main.innerHTML = "";
                     main.innerHTML = module.renderProjects();
                     removeClass(menuLinks);
+                    removeClass(navLinks);
                     menuLinks[1].classList.toggle('list__link--active');
+                    navLinks[1].classList.toggle('nav__link--active');
                 });
                 break;
             case 'Proyectos':

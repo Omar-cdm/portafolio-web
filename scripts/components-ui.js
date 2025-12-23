@@ -11,7 +11,7 @@ export function elementHeroContainer() {
     return `
         <div class="hero__container">
             <div class="hero__image-container">
-                <img class="hero__image" src="./assets/img-profile-3.webp" fetchpriority="high" alt="Omar Rodriguez">
+                <img class="hero__image" src="./assets/img-profile-3.webp" fetchpriority="high" decoding="async" alt="Omar Rodriguez">
             </div>
             <div class="hero__content">
                 <p class="hero__text">Hola, soy</p>
