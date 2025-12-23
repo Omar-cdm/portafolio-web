@@ -114,111 +114,12 @@ span {
     transition: transform 1s ease;
 }
 
-.header__robot {
-    width: 80px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
-
-.ear__left {
-    width: 6px;
-    height: 8px;
-    background-color: var(--green-md);
-    border-radius: 8px 0 0 8px;
-    z-index: 1;
-    position: absolute;
-    top: 24%;
-    left: -6px;
-}
-
-.ear__right {
-    width: 6px;
-    height: 8px;
-    background-color: var(--green-md);
-    border-radius: 0 8px 8px 0;
-    z-index: 1;
-    position: absolute;
-    top: 24%;
-    left: 26px;
-}
-
-.top-antenna {
-    width: 4px;
-    height: 6px;
-    background-color: var(--green-md);
-    z-index: 1;
-    position: absolute;
-    top: -7px;
-    left: 11px;
-    border-radius: 4px;
-}
-
-.antenna {
-    width: 16px;
-    height: 5px;
-    background-color: var(--green-md);
-    border-radius: 10px 10px 0px 0px;
-    z-index: 1;
-    position: absolute;
-    top: -4px;
-    left: 5px;
-}
-
-.robot {
-    position: absolute;
-    left: 134px;
-    top: 7px;
+.robot1 {
     width: 30px;
-    height: 20px;
-    border-radius: 6px;
-    border: 2px solid var(--green-md);
-    background-color: var(--green-md);
-    padding: 2px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    box-shadow: 0px 0px 6px 1px var(--green-md);
-    transform: rotate(10deg);
-    transition: transform 1s ease;
-}
-
-.robot__face {
-    width: 100%;
-    height: 100%;
-    background-color: var(--black-bluish);
-    border: 1px solid var(--green-md);
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.robot__eyes {
-    margin-top: 2px;
-    width: 100%; font: inherit;
-    height: 6px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.eye {
-    width: 5px;
-    height: 5px;
-    border-radius: 40%;
-    background-color: var(--green-md);
-    animation: blinkEyes 2s ease infinite;
-}
-
-.robot__mouth {
-    width: 6px;
-    height: 3px;
-    margin-top: 0px;
-    background-color: var(--green-md);
-    border-radius: 0 0 4px 4px;
+    position: absolute;
+    left: 148px;
+    top: 4px;
+    animation: float 4s ease infinite;
 }
 
 .header__nav {
@@ -381,23 +282,40 @@ span {
 
 /*ANIMATIONS*/
 
-@keyframes blinkEyes {
+.robot__jump {
+    animation: jump 1s ease;
+}
+
+.change-color {
+    fill: var(--green-md);
+    animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
     0% {
-        height: 5px;
-        transform: translateY(0);
+        fill: var(--green-md);
     }
-    5% {
-        height: 2px;
-        transform: translateY(2px);
-    }
-    10% {
-        height: 5px;
-        transform: translateY(0);
+    100% {
+        fill: var(--white);
     }
 }
 
-.robot__jump {
-    animation: jump 1s ease;
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(2px);
+    } 
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform: translateY(0);
+    } 
 }
 
 @keyframes jump {
@@ -468,41 +386,15 @@ span {
         top: 10px;
         font-size: 26px;
     }
-    .robot {
-        width: 26px;
-        height: 16px;
-        left: 106px;
+    .robot1 {
+        width: 24px;
+        left: 118px;
         top: 8px;
-        padding: 1px;
-        box-shadow: 0px 0px 2px 0px var(--green-md);
-    }
-    .ear__left {
-        top: 22%;
-        width: 6px;
-        height: 6px;
-        left: -5px;
-    }
-    .ear__right {
-        width: 6px;
-        height: 6px;
-        top: 22%;
-        left: 21px;
-    }
-    .top-antenna {
-        top: -6px;
-        left: 9px;
-        width: 4px;
-    }
-    .antenna {
-        left: 3px;
-    }
-    .robot__eyes {
-        margin-top: 1px;
-        height: 5px;
     }
     .header__hamburger {
         width: 30px;
         height: 100%;
+        padding: 0;
         background-color: transparent;
         border: transparent;
         display: flex;

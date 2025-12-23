@@ -1,6 +1,6 @@
 const main = document.querySelector('.main');
 const navList = document.querySelector('.nav__list');
-const robot = document.querySelector('.robot');
+const robot = document.querySelector('.robot1');
 const navLinks = document.querySelectorAll('.nav__link');
 const buttomHamburger = document.querySelector('.header__hamburger');
 const menuExit = document.querySelector('.menu__exit');
