@@ -1,5 +1,5 @@
 const projects = [
-    { title: "Super Pokemon", description: "Mi primer proyecto web funcional, desarrollado como un juego interactivo inspirado en Super Mokepon. El enfoque principal fue la implementación de lógica de juego avanzada y ataques dinámicos en el campo de batalla. Actualmente, estoy en fase de refactorización activa, optimizando el código JS para mejorar la UX y solucionar bugs.", img: "./assets/pokemon.webp", demo: "https://omar-cdm.github.io/mini-juego-pokemon/", codigo: "https://github.com/Omar-cdm/mini-juego-pokemon" },
+    { title: "Super Pokemon", description: "Mi primer proyecto web funcional, desarrollado como un juego interactivo inspirado en Super Mokepon de Platzi. El enfoque principal fue la implementación de lógica de juego distinta y ataques dinámicos en el campo de batalla. Actualmente, está en fase de refactorización del codigo JS, con el fin de que el codigo sea limpio y escalable.", img: "./assets/pokemon.webp", demo: "https://omar-cdm.github.io/mini-juego-pokemon/", codigo: "https://github.com/Omar-cdm/mini-juego-pokemon" },
     { title: "Portafolio Personal", description: "Este mismo portafolio, en donde usé HTML, CSS y JavaScript, es un espacio donde comparto información sobre mí, mis conocimientos, mis proyectos y mi contacto para conectar con la comunidad del desarrollo web.", img: "./assets/portafolio-1.webp", demo: "https://omar-cdm.github.io/portafolio-web/", codigo: "https://github.com/Omar-cdm/portafolio-web/" },
 ];
 
@@ -11,12 +11,12 @@ export function elementHeroContainer() {
     return `
         <div class="hero__container">
             <div class="hero__image-container">
-                <img class="hero__image" src="./assets/img-profile-3.webp">
+                <img class="hero__image" src="./assets/img-profile-3.webp" fetchpriority="high" alt="Omar Rodriguez">
             </div>
             <div class="hero__content">
                 <p class="hero__text">Hola, soy</p>
                 <h1 class="hero__title">Omar Rodriguez</h1>
-                <p class="hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software</p>            
+                <p class="hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software.</p>            
                 <button class="hero__button--click">Ver mis proyectos</button>
             </div>
         </div>
