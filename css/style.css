@@ -393,7 +393,7 @@ span {
     }
     .header__hamburger {
         width: 30px;
-        ng: 0;height: 100%;
+        height: 100%;
         padding: 6px 0 0;
         background-color: transparent;
         border: transparent;

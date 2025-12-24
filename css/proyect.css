@@ -69,10 +69,16 @@
     margin: 12px 0 0 0;
 }
 
+.project__container-image {
+    width: 480px;
+    height: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .project__image {
     width: 480px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .project__technologies {
@@ -165,6 +171,10 @@
     .projects__grid {
         margin-top: 20px;
         column-count: 1;
+    }
+    .project__container-image {
+        width: 220px;
+        height: 220px;
     }
     .project__image {
         width: 220px;
