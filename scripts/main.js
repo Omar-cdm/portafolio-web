@@ -72,6 +72,7 @@ import('./ui.js')
         removeClass(navLinks);
         menuLinks[1].classList.toggle('list__link--active');
         navLinks[1].classList.toggle('nav__link--active');
+        robot.classList.toggle('robot__jump');
     });
 });
 
@@ -99,6 +100,7 @@ function renderSection(sectionName) {
                     removeClass(navLinks);
                     menuLinks[1].classList.toggle('list__link--active');
                     navLinks[1].classList.toggle('nav__link--active');
+                    robot.classList.toggle('robot__jump');
                 });
                 break;
             case 'Proyectos':
