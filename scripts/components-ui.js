@@ -1,6 +1,6 @@
 const projects = [
     { title: "Super Pokemon", description: "Mi primer proyecto web funcional, desarrollado como un juego interactivo inspirado en Super Mokepon de Platzi. El enfoque principal fue la implementación de lógica de juego distinta y ataques dinámicos en el campo de batalla. Actualmente, está en fase de refactorización del codigo JS, con el fin de que el codigo sea limpio y escalable.", img: "./assets/pokemon.webp", demo: "https://omar-cdm.github.io/mini-juego-pokemon/", codigo: "https://github.com/Omar-cdm/mini-juego-pokemon" },
-    { title: "Portafolio Personal", description: "Este mismo portafolio, en donde usé HTML, CSS y JavaScript, es un espacio donde comparto información sobre mí, mis conocimientos, mis proyectos y mi contacto para conectar con la comunidad del desarrollo web.", img: "./assets/portafolio-1.webp", demo: "https://omar-cdm.github.io/portafolio-web/", codigo: "https://github.com/Omar-cdm/portafolio-web/" },
+    { title: "Portafolio Personal", description: "Este mismo portafolio, en donde usé HTML, CSS y JavaScript, es un espacio donde comparto información sobre mí, mis conocimientos, mis proyectos y mi contacto para conectar con la comunidad del desarrollo web.", img: "./assets/portafolio-1.webp", demo: "https://omar-cdm.github.io/portafolio-web/", codigo: "https://github.com/Omar-cdm/portafolio-web/" }, { title: "Adivina La Frase", description: "Este proyecto es una aplicación interactiva que desafía a los usuarios a adivinar frases icónicas de la serie. Más que un juego, representó un hito en mi aprendizaje técnico, permitiéndome dominar el framework Tailwind CSS para crear una interfaz pulida y responsiva.", img: "./assets/Adivina_la_frase.webp", demo: "https://omar-cdm.github.io/mini-juego-adivina-la-frase/", codigo: "https://github.com/Omar-cdm/mini-juego-adivina-la-frase" },
 ];
 
 const projectsElements = projects.map(project => elementArticle(project.title, project.description, project.img, project.demo, project.codigo));
@@ -65,7 +65,7 @@ function elementArticle(title, description, img, demo, codigo) {
               ${description}
             </p>
 
-            <img class="project__image" src="${img}">
+            <div class="project__container-image"><img class="project__image" src="${img}"></div>
 
             <div class="project__technologies">
                 <a class="project__technologies--demo" href="${demo}" target="_blank">

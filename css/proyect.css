@@ -71,7 +71,7 @@
 
 .project__container-image {
     width: 480px;
-    height: 480px;
+    height: 280px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -174,7 +174,7 @@
     }
     .project__container-image {
         width: 220px;
-        height: 220px;
+        height: 140px;
     }
     .project__image {
         width: 220px;
