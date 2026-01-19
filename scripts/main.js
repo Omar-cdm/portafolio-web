@@ -1,4 +1,4 @@
-const main = document.querySelector('.main');
+/*const main = document.querySelector('.main');
 const navList = document.querySelector('.nav__list');
 const robot = document.querySelector('.robot1');
 const navLinks = document.querySelectorAll('.nav__link');
@@ -119,4 +119,23 @@ function renderSection(sectionName) {
             module.animation();
         });
     });
+};*/
+
+//=====   NEW CODIG  =====
+
+import { renderHero, renderProjects, renderContact } from './ui.js';
+import { header, footer } from './components-ui.js';
+
+const root = document.querySelector('#root');
+
+renderLayout();
+
+function renderLayout() {
+    root.innerHTML =  `
+        ${header()}
+        <main>
+            ${renderContact()}
+        </main>
+        ${footer()}
+    `;
 };

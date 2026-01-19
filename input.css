@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+    --color-black-bluish: oklch(0.155 0.009 274);
+    --color-white-green: rgb(225, 241, 225);
+    --color-green-dark: rgb(164, 206, 164);
+    --color-black-transparent: rgb(26, 30, 28);
+
+    /*Background Gradient*/
+
+    --background-image-hacker-border: conic-gradient(
+        var(--color-green-dark) 0deg 45deg,
+        transparent 45deg 90deg,
+        var(--color-green-dark) 90deg 135deg,
+        transparent  135deg 180deg,
+        var(--color-green-dark)  180deg 225deg,
+        transparent 225deg 270deg,
+        var(--color-green-dark)  270deg 315deg,
+        transparent 315deg 360deg
+    );
+
+    /*Animation*/
+
+    --animate-hacker-spin: spin 4s linear infinite;
+    
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+}
