@@ -134,8 +134,44 @@ function renderLayout() {
     root.innerHTML =  `
         ${header()}
         <main>
-            ${renderContact()}
+            ${renderHero()}
         </main>
         ${footer()}
     `;
+};
+
+const main = document.querySelector('main');
+const links = document.querySelectorAll('.link');
+const btnMenu = document.querySelector('#btn-menu');
+const menuDesplegable = document.querySelector('#menu-desplegable');
+
+document.addEventListener('click', (e) => {
+  if (!btnMenu.contains(e.target) && !btnMenu.contains(e.target)) {
+    menuDesplegable.classList.toggle('hidden');
+    btnMenu.setAttribute('aria-expanded', 'false');
+  }
+});
+
+btnMenu.addEventListener('click', () => {
+    const expandir = btnMenu.getAttribute('aria-expanded') === 'true';
+    btnMenu.setAttribute('aria-expanded', !expandir);
+    menuDesplegable.classList.toggle('hidden');
+});
+
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        renderSection(e.target.innerText)
+    })
+});
+
+function renderSection(section) {
+    main.innerHTML = "";
+    if (section == 'Inicio') {
+        main.innerHTML = renderHero();
+    } else if (section == 'Proyectos') {
+        main.innerHTML = renderProjects();
+    } else {
+        main.innerHTML = renderContact();
+    };
 };

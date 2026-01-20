@@ -34,40 +34,47 @@ export function header() {
                 </ul>
             </nav>
 
-            <button class="w-7 h-7 flex flex-col justify-center items-center gap-[4px] border-1 border-green-400 rounded-lg px-1 header__hamburger">
+            <button class="w-7 h-7 flex flex-col justify-center items-center gap-[4px] border-1 border-green-400 rounded-lg px-1 relative header__hamburger menu-exit" id="btn-menu" aria-haspopup="true" aria-expanded="false" aria-controls="menu-desplegable">
+                
                 <div class="w-full h-[2px] bg-green-400 rounded-full bg-black hamburger__line"></div>
                 <div class="w-full h-[2px] bg-green-400 rounded-full bg-black hamburger__line"></div>
                 <div class="w-full h-[2px] bg-green-400 rounded-full bg-black hamburger__line"></div>
+                
+                ${navbar()}
             </button>
         </header>
     `;
 };
 
-export function navbar() {
+function navbar() {
     return `
-        <nav class="menu__nav">
-            <button class="menu__exit">
-                <div class="exit__line-left"></div>
-                <div class="exit__line-right"></div>
-            </button>
-            <ul class="menu__list">
+        <nav class="w-27 hidden bg-black-bluish text-white-green p-2 rounded-md border-1 border-green-400 absolute -top-1 -right-1  menu__nav" id="menu-desplegable">
+            <ul class="text-sm my-2 flex flex-col items-center gap-3 menu__list">
                 <li>
-                    <a href="./" class="list__link list__link--active">Inicio</a>        
+                    <a href="./" class="px-1 border-1 border-b-3 border-r-3 border-green-400 link">Inicio</a>        
                 </li>
                 <li>
-                    <a href="./" class="list__link">Proyectos</a>
+                    <a href="./" class="px-1 border-1 border-b-3 border-r-3 border-green-400 link">Proyectos</a>
                 </li>
                 <li>
-                    <a href="./" class="list__link">Contacto</a>
+                    <a href="./" class="px-1 border-1 border-b-3 border-r-3 border-green-400 link">Contacto</a>
                 </li>
             </ul>
+
+            <div class="size-5 text-black-bluish bg-green-400 flex justify-center items-center rounded-tr-sm absolute top-0 right-0">X</div>
+
+            <div class="size-3 absolute border-t-2 border-l-2 border-green-400 -top-1 -left-1 rounded-tl-md"></div>
+            <div class="size-3 absolute border-t-2 border-r-2 border-green-400 -top-1 -right-1 rounded-tr-md"></div>
+            <div class="size-3 absolute border-b-2 border-l-2 border-green-400 -bottom-1 -left-1 rounded-bl-lg"></div>
+            <div class="size-3 absolute border-b-2 border-r-2 border-green-400 -bottom-1 -right-1 rounded-br-lg"></div>
+
         </nav>
     `;
 };
 
 export function elementHeroContainer() {
     return `
-            <div class="w-full h-svh flex flex-col justify-center items-center gap-12 px-4 hero__container">
+            <div class="w-full h-svh flex flex-col justify-center items-center gap-12 hero__container">
                 <div class="w-1/2 h-50 relative border-1 border-green-400 hero__image-container">
                     <div class="size-8 absolute -top-2 -left-2 border-t-1 border-l-1 border-green-400"></div>
                     <div class="size-8 absolute -top-2 -right-2 border-t-1 border-r-1 border-green-400"></div>
@@ -86,7 +93,7 @@ export function elementHeroContainer() {
 
 export function elementBlockquote() {
     return `
-        <blockquote class="bg-[] bg-no-repeat bg-cover bg-center mt-10 mx-4 border-1 border-green-400 uote">
+        <blockquote class="bg-[] bg-no-repeat bg-cover bg-center mt-10 border-1 border-green-400 uote">
             <div class="bg-white/2 backdrop-blur-sm px-4 py-2">
                 <div class="size-10 absolute -top-1 -left-1 border-t-3 border-l-3 border-green-400"></div>
                 <div class="size-10 absolute -top-1 -right-1 border-t-3 border-r-3 border-green-400"></div>
@@ -129,7 +136,7 @@ export function elementSkill(img) {
 function elementArticle(title, description, img, demo, codigo) {
     return `
         <article class="w-5/6 p-2 bg-white/2 backdrop-blur-sm border-1 border-b-2 border-green-400 rounded-xl project">
-            <div class="h-7 absolute -top-4 left-0 bg-green-400 text-black-bluish px-2 rounded-r-md rounded-tl-md">
+            <div class="h-7 absolute -top-4 left-0 bg-green-400 text-black-bluish px-2 rounded-t-md rounded-tr-xl">
                 <h2 class="text-center text-base font-semibold pr-1 values__title">${title}</h2>
             </div>
             <p class="project__description">

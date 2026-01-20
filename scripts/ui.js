@@ -22,25 +22,19 @@ const form = elementFormContact();
 
 export function renderHero() {
     return `
-      <section class="hero">
+      <section class="p-4 hero">
         ${heroContainer}
-        <div class="about__container">
-          ${renderAboutMe()}
-          
-          ${renderValues()}
-          ${blockquote}
-
-          ${renderSkills()}
-          
-          
-        </div>
+        ${renderAboutMe()}  
+        ${renderValues()}
+        ${blockquote}
+        ${renderSkills()}
       </section> 
     `;
 }
 
 function renderAboutMe() {
     return `
-      <div class="bg-white/2 backdrop-blur-sm border-1 border-r-2 border-green-400 px-6 py-2 mx-4 rounded-bl-2xl rounded-tr-xl relative">
+      <div class="bg-white/2 backdrop-blur-sm border-1 border-r-2 border-green-400 px-6 py-2 rounded-bl-2xl rounded-tr-xl relative">
         <div class="size-8 absolute z-1 -top-2 -left-2 border-t-1 border-l-1 border-green-400"></div>
         <div class="size-8 absolute -bottom-2 -right-2 border-b-1 border-r-1 border-green-400"></div>
         <div class="w-2 h-1/3 absolute z-1 bottom-2 -left-1 bg-green-400"></div>
@@ -97,7 +91,7 @@ function renderValues() {
     const newValuesElements = valuesElements.join("");
 
     return `
-      <div class="bg-white/2 backdrop-blur-sm border-1 border-l-2 border-green-400 px-6 py-2 mx-4 my-18 rounded-br-2xl rounded-tl-xl relative">
+      <div class="bg-white/2 backdrop-blur-sm border-1 border-l-2 border-green-400 px-6 py-2 my-18 rounded-br-2xl rounded-tl-xl relative">
         <div class="size-8 absolute z-1 -top-2 -right-2 border-t-1 border-r-1 border-green-400"></div>
         <div class="size-8 absolute -bottom-2 -left-2 border-b-1 border-l-1 border-green-400"></div>
         <div class="w-2 h-1/3 absolute z-1 bottom-2 -right-1 bg-green-400"></div>
@@ -118,7 +112,7 @@ function renderSkills() {
     const newSkillsElements = skillsElements.join("");
 
     return `
-      <div class="bg-white/2 backdrop-blur-sm px-4 py-6 mx-4 my-18 border-1 border-green-400 rounded-md relative skills">
+      <div class="bg-white/2 backdrop-blur-sm px-4 py-6 my-18 border-1 border-green-400 rounded-md relative skills">
         <div class="h-7 absolute top-0 inset-x-1/4 bg-green-400 text-black-bluish px-2 rounded-b-lg">
           <h1 class="text-lg text-center font-bold pl-1 about__title">Herramientas</h1>
         </div>
@@ -163,7 +157,7 @@ export function renderContact() {
               <div class="w-3/5 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
             </div>
           <p class="text-center p-4 my-2 contact__description">
-            Si en tu proyecto de desarrollo frontend necesitas un par de manos extra, estoy listo para participar.
+            Disponible para participar en proyectos de desarrollo web frontend y crear páginas web basicas.
           </p>
           <div class="grid place-items-center">
             ${form}
