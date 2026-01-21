@@ -133,7 +133,7 @@ renderLayout();
 function renderLayout() {
     root.innerHTML =  `
         ${header()}
-        <main>
+        <main class="flex justify-center">
             ${renderHero()}
         </main>
         ${footer()}
@@ -167,6 +167,7 @@ links.forEach(link => {
 
 function renderSection(section) {
     main.innerHTML = "";
+    window.scrollTo(0,0);
     if (section == 'Inicio') {
         main.innerHTML = renderHero();
     } else if (section == 'Proyectos') {

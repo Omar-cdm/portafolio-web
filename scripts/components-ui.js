@@ -74,14 +74,14 @@ function navbar() {
 
 export function elementHeroContainer() {
     return `
-            <div class="w-full h-svh flex flex-col justify-center items-center gap-12 hero__container">
-                <div class="w-1/2 h-50 relative border-1 border-green-400 hero__image-container">
+            <div class="w-full h-svh flex flex-col justify-center items-center gap-12 sm:col-span-2 sm:flex-row hero__container">
+                <div class="w-1/2 h-50 relative border-1 border-green-400 hero__image-container sm:w-1/5 sm:h-54">
                     <div class="size-8 absolute -top-2 -left-2 border-t-1 border-l-1 border-green-400"></div>
                     <div class="size-8 absolute -top-2 -right-2 border-t-1 border-r-1 border-green-400"></div>
                     <div class="size-8 absolute -bottom-2 -left-2 border-b-1 border-l-1 border-green-400"></div>
                     <div class="size-8 absolute -bottom-2 -right-2 border-b-1 border-r-1 border-green-400"></div>
                 </div>
-                <div class="bg-white/2 backdrop-blur-sm flex flex-col p-4 border-y-2 border-green-400 rounded-tl-xl rounded-br-xl relative hero__content">
+                <div class="bg-white/2 backdrop-blur-sm flex flex-col p-4 border-y-2 border-green-400 rounded-tl-xl rounded-br-xl relative sm:w-1/2 hero__content">
                     <div class="w-1/3 h-3 bg-green-400 rounded-b-md absolute top-0 left-6"></div>
                     <h1 class="w-full text-3xl text-end text-green-400 text-center font-bold py-1 mb-2 hero__title">Omar Rodriguez</h1>
                     <p class="pb-5 hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software.</p>            
@@ -93,13 +93,13 @@ export function elementHeroContainer() {
 
 export function elementBlockquote() {
     return `
-        <blockquote class="bg-[] bg-no-repeat bg-cover bg-center mt-10 border-1 border-green-400 uote">
-            <div class="bg-white/2 backdrop-blur-sm px-4 py-2">
+        <blockquote class="bg-white/2 backdrop-blur-sm mt-10 border-1 border-green-400 sm:m-0 uote">
+            <div class=" px-4 py-2">
                 <div class="size-10 absolute -top-1 -left-1 border-t-3 border-l-3 border-green-400"></div>
                 <div class="size-10 absolute -top-1 -right-1 border-t-3 border-r-3 border-green-400"></div>
                 <div class="size-10 absolute -bottom-1 -left-1 border-b-3 border-l-3 border-green-400"></div>
                 <div class="size-10 absolute -bottom-1 -right-1 border-b-3 border-r-3 border-green-400"></div>
-                <h2 class="text-center text-2xl font-extrabold my-2 quote__subtitle">¡NUNCA PARES DE APRENDER!</h2>
+                <h2 class="text-center text-2xl font-extrabold my-2 sm:my-4 quote__subtitle">¡NUNCA PARES DE APRENDER!</h2>
                 <p class="text-center text-sm quote__text">
                     Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje. Creando en mi el habito y la necesidad de siempre querer aprender temas nuevos acerca del desarrollo web.
                 </p>
@@ -164,7 +164,7 @@ function elementArticle(title, description, img, demo, codigo) {
 
 export function elementFormContact() {
     return `
-        <form class="w-5/6 flex bg-white/2 backdrop-blur-sm flex-col gap-2 p-4 rounded-md relative contact__form" action="https://formspree.io/f/mvzpbarl" method="POST">
+        <form class="w-5/6 flex bg-white/2 backdrop-blur-sm flex-col gap-2 p-4 rounded-md relative sm:w-3/5 contact__form" action="https://formspree.io/f/mvzpbarl" method="POST">
             <label class="form__text-name" for="text">Nombre</label>
             <input class="w-3/4 border-1 border-green-400 rounded-sm form__input-text" type="text" name="nombre" id="text" required></input>
             <label class="p-1 form__text-email" for="email">Email</label>
@@ -186,15 +186,15 @@ export function elementFormContact() {
 
 export function footer() {
     return `
-        <footer class="bg-white/2 backdrop-blur-sm px-6 py-8 mx-3 border-4 border-green-400 relative rounded-xl footer">
-            <div class="footer__container">
-                <div class="my-3 footer__phone">
+        <footer class="bg-white/2 backdrop-blur-sm px-6 py-8 mx-3 border-4 border-green-400 relative rounded-xl sm:mt-16 footer">
+            <div class="sm:grid sm:place-items-center sm:grid-cols-3 footer__container">
+                <div class="my-3 sm:h-full sm:m-0 footer__phone">
                     <h4 class="footer__title">Teléfono</h4>
                     <p class="footer__text">+57 304 301 5421</p>
                 </div>
-                <div class="mb-3 footer__email">
-                    <h4 class="footer__title">Email</h4>
-                    <p class="footer__text">omardev332@gmail.com</p>
+                <div class="mb-3 sm:h-full sm:m-0 footer__phone">
+                    <h4 class="footer__title">Teléfono</h4>
+                    <p class="footer__text">+57 304 301 5421</p>
                 </div>
                 <div class="mb-3 footer__redes">
                     <h4 class="mb-1 footer__title">Redes</h4>
@@ -210,8 +210,8 @@ export function footer() {
                         </a>
                     </div>
                 </div>
-                <div class="flex text-xs mb-1 footer__credits">
-                    <button popovertarget="info-privacidad" class="w-1/2 footer__credits-link">Política de Privacidad</button>
+                <div class="flex text-xs mb-1 sm:col-span-3 sm:w-full sm:gap-6 sm:mt-4 footer__credits">
+                    <button popovertarget="info-privacidad" class="w-1/2 sm:text-end footer__credits-link">Política de Privacidad</button>
 
                     <div id="info-privacidad" popover class="footer__credits-dialog">
                         <h3 class="credits__dialog-title">Política de Privacidad</h3>

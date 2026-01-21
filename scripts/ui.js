@@ -12,7 +12,6 @@ const skills = [
     { img: "./assets/css-3.svg"  },
     { img: "./assets/javascript.svg" },
     { img: "./assets/tailwind.svg" },
-    { img: "./assets/vs-code.svg" }, 
 ];
 
 const heroContainer = elementHeroContainer();
@@ -22,7 +21,7 @@ const form = elementFormContact();
 
 export function renderHero() {
     return `
-      <section class="p-4 hero">
+      <section class="px-4 sm:grid sm:grid-cols-2 sm:w-5/6 sm:gap-10 sm:pb-8 sm:mb-6 hero">
         ${heroContainer}
         ${renderAboutMe()}  
         ${renderValues()}
@@ -91,7 +90,7 @@ function renderValues() {
     const newValuesElements = valuesElements.join("");
 
     return `
-      <div class="bg-white/2 backdrop-blur-sm border-1 border-l-2 border-green-400 px-6 py-2 my-18 rounded-br-2xl rounded-tl-xl relative">
+      <div class="bg-white/2 backdrop-blur-sm border-1 border-l-2 border-green-400 px-6 py-2 my-18 rounded-br-2xl rounded-tl-xl relative sm:m-0">
         <div class="size-8 absolute z-1 -top-2 -right-2 border-t-1 border-r-1 border-green-400"></div>
         <div class="size-8 absolute -bottom-2 -left-2 border-b-1 border-l-1 border-green-400"></div>
         <div class="w-2 h-1/3 absolute z-1 bottom-2 -right-1 bg-green-400"></div>
@@ -112,12 +111,12 @@ function renderSkills() {
     const newSkillsElements = skillsElements.join("");
 
     return `
-      <div class="bg-white/2 backdrop-blur-sm px-4 py-6 my-18 border-1 border-green-400 rounded-md relative skills">
+      <div class="bg-white/2 backdrop-blur-sm px-4 py-6 my-18 border-1 border-green-400 rounded-md relative sm:m-0 skills">
         <div class="h-7 absolute top-0 inset-x-1/4 bg-green-400 text-black-bluish px-2 rounded-b-lg">
           <h1 class="text-lg text-center font-bold pl-1 about__title">Herramientas</h1>
         </div>
 
-        <div class="grid grid-cols-3 place-items-center gap-4 mt-6 mb-2 skills__list">
+        <div class="grid grid-cols-3 place-items-center gap-4 mt-6 mb-2 sm:grid-cols-4 sm:h-30 skills__list">
           ${newSkillsElements}
         </div>
 
@@ -131,16 +130,16 @@ function renderSkills() {
 
 export function renderProjects() {
     return `
-        <section class="p-4 proyects">
-          <div class="mt-2 mb-18">
+        <section class="p-4 sm:w-5/6 sm:p-8 proyects">
+          <div class="mt-2 mb-18 sm:mb-0">
             <div class="h-10 bg-black-bluish text-black-bluish px-2 flex justify-center items-end relative border-b-1 border-green-400 rounded-t-xl">
-              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 about__title">Proyectos de Práctica</h1>
+              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 sm:text-4xl about__title">Proyectos de Práctica</h1>
               <div class="w-5/6 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
             </div>
-            <p class="text-center p-4 mt-2 projects__description">
+            <p class="text-center p-4 mt-2 sm:mt-4 mb-6 projects__description">
               Cada proyecto representa el progreso de mi aprendizaje, implementando conceptos aprendidos y buenas practicas aprendidas, ya que siempre busco hacer codigo de calidad y facil de mantener.
             </p>
-            <div class="p2-2 m-4 grid grid-cols-1 place-items-center gap-10 projects__grid">
+            <div class="p-2 m-4 grid grid-cols-1 place-items-center gap-y-10 sm:grid-cols-2 sm:gap-y-14 projects__grid">
               ${newprojectsElements}
             </div>
           </div>
@@ -150,16 +149,16 @@ export function renderProjects() {
 
 export function renderContact() {
     return `
-      <section class="p-4 contact">
-        <div class="mt-2 mb-18 contact__container">
+      <section class="p-4 sm:w-5/6 sm:p-8 contact">
+        <div class="mt-2 mb-18 sm:mb-0 contact__container">
           <div class="h-10 bg-black-bluish text-black-bluish px-2 flex justify-center items-end relative border-b-1 border-green-400 rounded-t-xl">
-              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 about__title">Contacto</h1>
+              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 sm:text-4xl about__title">Contacto</h1>
               <div class="w-3/5 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
-            </div>
-          <p class="text-center p-4 my-2 contact__description">
+          </div>
+          <p class="text-center p-4 my-2 sm:mt-4 sm:mb-6 contact__description">
             Disponible para participar en proyectos de desarrollo web frontend y crear páginas web basicas.
           </p>
-          <div class="grid place-items-center">
+          <div class="grid place-items-center sm:m-4">
             ${form}
           </div>
         </div>
