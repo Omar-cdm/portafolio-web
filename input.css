@@ -22,10 +22,49 @@
     /*Animation*/
 
     --animate-hacker-spin: spin 4s linear infinite;
+    --animate-change-color: changeColor 1s linear infinite;
+    --animate-effect-float: float 4s ease-in-out infinite;
+    --animate-entrance: entrance 1s ease forwards;
+
+    @keyframes entrance {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1; 
+        }
+    }
     
 
     @keyframes spin {
         to { transform: rotate(360deg); }
     }
+    
 
+    @keyframes changeColor {
+        0% {
+            fill: #00d981;
+        }
+        100% {
+            fill: transparent;
+        }
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(-2px);
+        }
+        40% {
+            transform: translateY(-3px);
+        } 
+        60% {
+            transform: translateY(-2px);
+        }
+        80% {
+            transform: translateY(-3px);
+        }
+        100% {
+            transform: translateY(-2px);
+        } 
+    }
 }

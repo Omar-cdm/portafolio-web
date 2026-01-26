@@ -17,23 +17,37 @@ const skills = [
 const heroContainer = elementHeroContainer();
 const blockquote = elementBlockquote();
 
-const form = elementFormContact();  
+const form = elementFormContact();
+
+export function welcome() {
+    return `
+        <section class="w-full h-svh flex justify-center items-center section-welcome">
+            <h1 class="text-xl text-green-400">@ThinkPad-T480<span class="text-white-green">:</span></h1>
+            <p class="text-xl text-green-dark ml-1">~</p>
+            <p class="text-xl mr-3">$</p>
+            <p class="text-xl written-text-js"></p>  
+        </section>
+    `;
+};
 
 export function renderHero() {
     return `
-      <section class="px-4 sm:grid sm:grid-cols-2 sm:w-5/6 sm:gap-10 sm:pb-8 sm:mb-6 hero">
+      <section class="px-6 sm:grid sm:grid-cols-2 sm:place-items-center sm:w-5/6 sm:gap-x-10 sm:pb-8 sm:mb-6 hero">
         ${heroContainer}
         ${renderAboutMe()}  
         ${renderValues()}
-        ${blockquote}
-        ${renderSkills()}
+        
+        <div class="sm:w-full sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center sm:col-start-2 sm:row-start-1 sm:row-span-2">
+          ${blockquote}
+          ${renderSkills()}
+        <div>
       </section> 
     `;
 }
 
 function renderAboutMe() {
     return `
-      <div class="bg-white/2 backdrop-blur-sm border-1 border-r-2 border-green-400 px-6 py-2 rounded-bl-2xl rounded-tr-xl relative">
+      <div class="bg-white/2 backdrop-blur-sm border-1 border-r-2 border-green-400 px-6 py-2 rounded-bl-2xl rounded-tr-xl sm:w-5/6 relative">
         <div class="size-8 absolute z-1 -top-2 -left-2 border-t-1 border-l-1 border-green-400"></div>
         <div class="size-8 absolute -bottom-2 -right-2 border-b-1 border-r-1 border-green-400"></div>
         <div class="w-2 h-1/3 absolute z-1 bottom-2 -left-1 bg-green-400"></div>
@@ -90,7 +104,7 @@ function renderValues() {
     const newValuesElements = valuesElements.join("");
 
     return `
-      <div class="bg-white/2 backdrop-blur-sm border-1 border-l-2 border-green-400 px-6 py-2 my-18 rounded-br-2xl rounded-tl-xl relative sm:m-0">
+      <div class="bg-white/2 backdrop-blur-sm border-1 border-l-2 border-green-400 px-6 py-2 my-18 rounded-br-2xl rounded-tl-xl relative sm:w-5/6 sm:m-0">
         <div class="size-8 absolute z-1 -top-2 -right-2 border-t-1 border-r-1 border-green-400"></div>
         <div class="size-8 absolute -bottom-2 -left-2 border-b-1 border-l-1 border-green-400"></div>
         <div class="w-2 h-1/3 absolute z-1 bottom-2 -right-1 bg-green-400"></div>
@@ -111,12 +125,12 @@ function renderSkills() {
     const newSkillsElements = skillsElements.join("");
 
     return `
-      <div class="bg-white/2 backdrop-blur-sm px-4 py-6 my-18 border-1 border-green-400 rounded-md relative sm:m-0 skills">
+      <div class="w-full bg-white/2 backdrop-blur-sm px-4 py-6 my-18 flex justify-center items-center border-1 border-green-400 rounded-md relative sm:w-5/6 sm:h-1/3 sm:m-0 skills">
         <div class="h-7 absolute top-0 inset-x-1/4 bg-green-400 text-black-bluish px-2 rounded-b-lg">
           <h1 class="text-lg text-center font-bold pl-1 about__title">Herramientas</h1>
         </div>
 
-        <div class="grid grid-cols-3 place-items-center gap-4 mt-6 mb-2 sm:grid-cols-4 sm:h-30 skills__list">
+        <div class="grid grid-cols-3 place-items-center gap-4 mt-6 mb-2 sm:grid-cols-4 skills__list">
           ${newSkillsElements}
         </div>
 
@@ -133,13 +147,13 @@ export function renderProjects() {
         <section class="p-4 sm:w-5/6 sm:p-8 proyects">
           <div class="mt-2 mb-18 sm:mb-0">
             <div class="h-10 bg-black-bluish text-black-bluish px-2 flex justify-center items-end relative border-b-1 border-green-400 rounded-t-xl">
-              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 sm:text-4xl about__title">Proyectos de Práctica</h1>
+              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 sm:text-4xl sm:bottom-0 about__title">Proyectos de Práctica</h1>
               <div class="w-5/6 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
             </div>
             <p class="text-center p-4 mt-2 sm:mt-4 mb-6 projects__description">
               Cada proyecto representa el progreso de mi aprendizaje, implementando conceptos aprendidos y buenas practicas aprendidas, ya que siempre busco hacer codigo de calidad y facil de mantener.
             </p>
-            <div class="p-2 m-4 grid grid-cols-1 place-items-center gap-y-10 sm:grid-cols-2 sm:gap-y-14 projects__grid">
+            <div class="p-2 m-4 grid grid-cols-1 place-items-center gap-y-10 sm:grid-cols-2 sm:gap-y-14 sm:gap-x-0 projects__grid">
               ${newprojectsElements}
             </div>
           </div>
@@ -152,7 +166,7 @@ export function renderContact() {
       <section class="p-4 sm:w-5/6 sm:p-8 contact">
         <div class="mt-2 mb-18 sm:mb-0 contact__container">
           <div class="h-10 bg-black-bluish text-black-bluish px-2 flex justify-center items-end relative border-b-1 border-green-400 rounded-t-xl">
-              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 sm:text-4xl about__title">Contacto</h1>
+              <h1 class="text-2xl text-white-green font-bold absolute -bottom-1 pl-1 sm:text-4xl sm:bottom-0 about__title">Contacto</h1>
               <div class="w-3/5 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
           </div>
           <p class="text-center p-4 my-2 sm:mt-4 sm:mb-6 contact__description">
@@ -172,3 +186,5 @@ export function renderContact() {
 // </p>
 //div class="w-1/3 h-6 bg-black-bluish absolute -bottom-1 -left-1 border-t-1 border-r-1 border-green-400 rounded-tr-lg"></div>
 //<div class="size-8 absolute bottom-4 -left-1 border-b-4 border-l-4 border-green-400"></div>//
+
+/*<div class="sm:w-full sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-12 sm:col-start-2 sm:row-start-1 sm:row-span-2">*/
