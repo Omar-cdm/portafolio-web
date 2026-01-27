@@ -74,16 +74,17 @@ function navbar() {
 
 export function elementHeroContainer() {
     return `
-            <div class="w-full h-svh flex flex-col justify-center items-center gap-12 sm:col-span-1 sm:row-span-2 hero__container">
-                <div class="w-1/2 h-50 relative border-1 border-green-400 hero__image-container sm:w-1/3 sm:h-1/3">
+            <div class="w-full h-svh flex flex-col justify-center items-center gap-12 lg:col-span-1 lg:row-span-2 hero__container">
+                <div class="w-1/2 h-1/4 bg-white/2 backdop-blur-sm flex items-end relative border-1 border-green-400 sm:w-2/5 sm:h-1/3 hero__image-container">
                     <div class="size-8 absolute -top-2 -left-2 border-t-1 border-l-1 border-green-400"></div>
                     <div class="size-8 absolute -top-2 -right-2 border-t-1 border-r-1 border-green-400"></div>
                     <div class="size-8 absolute -bottom-2 -left-2 border-b-1 border-l-1 border-green-400"></div>
                     <div class="size-8 absolute -bottom-2 -right-2 border-b-1 border-r-1 border-green-400"></div>
-
-                    <img class="hero__image" src="./assets/img-profile.webp" fetchpriority="high" alt="Omar Rodriguez">
+                    
+                    <img class="object-fill hero__image" src="./assets/img-profile1.webp" fetchpriority="high" alt="Omar Rodriguez">
+                    
                 </div>
-                <div class="bg-white/2 backdrop-blur-sm flex flex-col justify-center p-4 border-y-2 border-green-400 rounded-tl-xl rounded-br-xl relative sm:w-5/6 sm:h-1/3  hero__content">
+                <div class="w-full bg-white/2 backdrop-blur-sm flex flex-col justify-center p-4 border-y-2 border-green-400 rounded-tl-xl rounded-br-xl relative lg:w-5/6 lg:h-1/3  hero__content">
                     <div class="w-1/3 h-3 bg-green-400 rounded-b-md absolute top-0 left-6"></div>
                     <h1 class="w-full text-3xl text-end text-green-400 text-center font-bold py-1 mb-2 hero__title">Omar Rodriguez</h1>
                     <p class="pb-5 hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software.</p>            
@@ -95,13 +96,13 @@ export function elementHeroContainer() {
 
 export function elementBlockquote() {
     return `
-        <blockquote class="bg-white/2 backdrop-blur-sm  px-4 py-2 mt-10 flex justify-center items-center border-1 border-green-400 sm:w-5/6 sm:h-1/3 sm:m-0 sm:mb-12">
+        <blockquote class="bg-white/2 backdrop-blur-sm  px-4 py-2 mt-10 flex justify-center items-center border-1 border-green-400 lg:w-5/6 lg:h-1/3 lg:m-0 lg:mb-12">
             <div class="">
                 <div class="size-10 absolute -top-1 -left-1 border-t-3 border-l-3 border-green-400"></div>
                 <div class="size-10 absolute -top-1 -right-1 border-t-3 border-r-3 border-green-400"></div>
                 <div class="size-10 absolute -bottom-1 -left-1 border-b-3 border-l-3 border-green-400"></div>
                 <div class="size-10 absolute -bottom-1 -right-1 border-b-3 border-r-3 border-green-400"></div>
-                <h2 class="text-center text-2xl font-extrabold my-2 sm:text-xl sm:my-2 quote__subtitle">¡NUNCA PARES DE APRENDER!</h2>
+                <h2 class="text-center text-2xl font-extrabold my-2 lg:text-xl lg:my-2 quote__subtitle">¡NUNCA PARES DE APRENDER!</h2>
 
                 <p class="text-center text-sm quote__text">
                     Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje. Creando en mi el habito de siempre querer aprender.
@@ -127,10 +128,10 @@ export function elementLiValue(valueName) {
 
 export function elementSkill(img) {
     return `
-        <div class="size-18 rounded-full grid place-items-center relative overflow-hidden sm:size-16">
+        <div class="size-18 rounded-full grid place-items-center relative overflow-hidden lg:size-16">
             <div class="absolute bg-hacker-border inset-[-50%] animate-hacker-spin flex justify-center items-center skill">
             </div>
-            <div class="size-16 bg-black-bluish rounded-full relative z-1 rotate-none grid place-items-center sm:size-14 skill__bar">
+            <div class="size-16 bg-black-bluish rounded-full relative z-1 rotate-none grid place-items-center lg:size-14 skill__bar">
                 <img src="${img}" class="size-10 sm:size-8"/>
             </div>
         </div>
@@ -139,7 +140,7 @@ export function elementSkill(img) {
 
 function elementArticle(title, img, demo, codigo) {
     return `
-        <article class="w-5/6 p-2 bg-white/2 backdrop-blur-sm border-1 border-b-2 border-green-400 rounded-xl sm:max-w-3/4 project">
+        <article class="w-5/6 p-2 bg-white/2 backdrop-blur-sm border-1 border-b-2 border-green-400 rounded-xl lg:max-w-3/4 project">
             <div class="h-7 absolute -top-4 left-0 bg-green-400 text-black-bluish px-2 rounded-t-md rounded-tr-xl">
                 <h2 class="text-center text-base font-semibold pr-1 values__title">${title}</h2>
             </div>
@@ -168,7 +169,7 @@ function elementArticle(title, img, demo, codigo) {
 
 export function elementFormContact() {
     return `
-        <form class="w-5/6 flex bg-white/2 backdrop-blur-sm flex-col gap-2 p-4 rounded-md relative sm:w-3/5 contact__form" action="https://formspree.io/f/mvzpbarl" method="POST">
+        <form class="w-5/6 flex bg-white/2 backdrop-blur-sm flex-col gap-2 p-4 rounded-md relative lg:w-3/5 contact__form" action="https://formspree.io/f/mvzpbarl" method="POST">
             <label class="form__text-name" for="text">Nombre</label>
             <input class="w-3/4 p-1 text-sm outline-none border-1 border-green-400 rounded-sm hover:border-green-dark focus:border-green-dark focus:bg-white/2 focus:backdrop-blur-sm form__input-text" type="text" name="nombre" id="text" required></input>
             <label class="p-1 form__text-email" for="email">Email</label>

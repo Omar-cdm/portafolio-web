@@ -9,7 +9,7 @@ export function animation() {
             };
         })           
     }, {
-        threshold: 0.4
+        threshold: 0.3
     });
     observer.observe(elements);
 

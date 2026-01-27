@@ -46,7 +46,7 @@ function renderLayout() {
 
 function writeText() {
     const writtenText = document.querySelector('.written-text-js');
-    let text = 'brave ./profile/index.html';
+    let text = 'cat ./profile/index.html';
     let count = 0
 
     let nInterval = setInterval(() => {
