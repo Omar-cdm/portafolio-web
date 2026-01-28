@@ -17,22 +17,8 @@ export function header() {
 
             <div class="flex items-center gap-1 header__logo">
                 <h1 class="text-2xl font-extrabold">OmarDev</h1>
-                <svg class="size-6 animate-effect-float transform-gpu  robot1" viewBox="0 -77.5 1179 1179" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M597.215632 994.574713h403.714943s43.549425-8.945287 43.549425-114.64092 94.16092-577.677241-459.976092-577.677241-457.151264 541.425287-457.151264 541.425287-25.423448 160.77977 54.848735 157.013333 415.014253-6.12046 415.014253-6.120459z" fill="#0B0C10" /><path d="M1071.786667 712.798161h72.503908v136.297931h-72.503908zM36.016552 712.798161h72.503908v136.297931H36.016552z" fill="#00d981" /><path d="M305.68366 559.40926l556.254412-1.165018 0.398364 190.20464-556.254412 1.165018-0.398364-190.20464Z" fill="#00d981" /><path d="M1129.931034 680.312644h-59.556781c-3.295632-152.069885-67.56046-258.942529-172.079081-324.384368l115.347127-238.462529a47.08046 47.08046 0 1 0-42.372414-20.48l-114.640919 236.57931a625.934713 625.934713 0 0 0-269.30023-53.200919 625.228506 625.228506 0 0 0-270.006437 54.848736l-115.817931-235.402299a47.08046 47.08046 0 1 0-42.372414 20.715402l117.701149 238.462529c-103.812414 65.441839-167.135632 173.02069-169.960459 324.61977H47.786667a47.08046 47.08046 0 0 0-47.08046 47.08046v117.701149a47.08046 47.08046 0 0 0 47.08046 47.08046h58.615172v57.908965a70.62069 70.62069 0 0 0 70.62069 70.62069l823.908046-1.647816a70.62069 70.62069 0 0 0 70.620689-70.62069v-57.908965h59.085977a47.08046 47.08046 0 0 0 47.08046-47.08046v-117.701149A47.08046 47.08046 0 0 0 1129.931034 680.312644zM94.16092 847.212874H47.08046v-117.70115h47.08046v117.70115z m929.83908 103.106206a23.54023 23.54023 0 0 1-23.54023 23.54023l-823.908046 1.647816a23.54023 23.54023 0 0 1-23.54023-23.540229v-258.942529c0-329.563218 303.668966-365.57977 434.788046-365.815173s435.494253 34.604138 436.20046 363.931954z m105.46023-105.224827h-47.08046v-117.70115h47.08046v117.70115z" fill="#00d981" /><path class="" d="M464.684138 135.827126l22.363218-19.53839 40.018391 62.381609a30.131494 30.131494 0 0 0 25.423448 13.888735h2.824828a30.131494 30.131494 0 0 0 25.188046-19.067586l20.715402-79.095172 21.186207 74.387126v2.118621a30.366897 30.366897 0 0 0 52.494713 6.826667l30.366896-57.202759 13.182529 12.947126a30.131494 30.131494 0 0 0 21.186207 8.709886h57.673563a23.54023 23.54023 0 0 0 23.54023-23.54023 23.54023 23.54023 0 0 0-23.54023-23.54023h-50.140689l-23.54023-23.54023a30.366897 30.366897 0 0 0-45.668046 3.766437l-21.42161 40.01839L629.465747 19.302989a30.131494 30.131494 0 0 0-28.012873-19.067587 30.131494 30.131494 0 0 0-28.012874 19.067587l-26.60046 101.693793-29.660689-47.08046a30.366897 30.366897 0 0 0-20.48-13.653333 30.837701 30.837701 0 0 0-23.54023 6.826666l-32.250115 28.248276h-60.027586a23.54023 23.54023 0 0 0-23.54023 23.54023 23.54023 23.54023 0 0 0 23.54023 23.54023h66.148046a31.308506 31.308506 0 0 0 17.655172-6.591265zM776.121379 532.950805H404.421149A121.232184 121.232184 0 0 0 282.482759 639.352644a117.701149 117.701149 0 0 0 117.701149 129.000459h371.70023a121.232184 121.232184 0 0 0 121.938391-106.401839 117.701149 117.701149 0 0 0-117.70115-129.000459z m0 188.321839H402.302529a72.503908 72.503908 0 0 1-72.268506-56.496552 70.62069 70.62069 0 0 1 68.972874-84.744828h373.81885a72.503908 72.503908 0 0 1 72.268506 56.496552 70.62069 70.62069 0 0 1-68.502069 84.744828z" /></svg>
+                <svg class="size-6 animate-effect-float transform-gpu  robot1" viewBox="0 -77.5 1179 1179" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M597.215632 994.574713h403.714943s43.549425-8.945287 43.549425-114.64092 94.16092-577.677241-459.976092-577.677241-457.151264 541.425287-457.151264 541.425287-25.423448 160.77977 54.848735 157.013333 415.014253-6.12046 415.014253-6.120459z" fill="#0B0C10" /><path d="M1071.786667 712.798161h72.503908v136.297931h-72.503908zM36.016552 712.798161h72.503908v136.297931H36.016552z" fill="#00d981" /><path d="M305.68366 559.40926l556.254412-1.165018 0.398364 190.20464-556.254412 1.165018-0.398364-190.20464Z" fill="#00d981" /><path d="M1129.931034 680.312644h-59.556781c-3.295632-152.069885-67.56046-258.942529-172.079081-324.384368l115.347127-238.462529a47.08046 47.08046 0 1 0-42.372414-20.48l-114.640919 236.57931a625.934713 625.934713 0 0 0-269.30023-53.200919 625.228506 625.228506 0 0 0-270.006437 54.848736l-115.817931-235.402299a47.08046 47.08046 0 1 0-42.372414 20.715402l117.701149 238.462529c-103.812414 65.441839-167.135632 173.02069-169.960459 324.61977H47.786667a47.08046 47.08046 0 0 0-47.08046 47.08046v117.701149a47.08046 47.08046 0 0 0 47.08046 47.08046h58.615172v57.908965a70.62069 70.62069 0 0 0 70.62069 70.62069l823.908046-1.647816a70.62069 70.62069 0 0 0 70.620689-70.62069v-57.908965h59.085977a47.08046 47.08046 0 0 0 47.08046-47.08046v-117.701149A47.08046 47.08046 0 0 0 1129.931034 680.312644zM94.16092 847.212874H47.08046v-117.70115h47.08046v117.70115z m929.83908 103.106206a23.54023 23.54023 0 0 1-23.54023 23.54023l-823.908046 1.647816a23.54023 23.54023 0 0 1-23.54023-23.540229v-258.942529c0-329.563218 303.668966-365.57977 434.788046-365.815173s435.494253 34.604138 436.20046 363.931954z m105.46023-105.224827h-47.08046v-117.70115h47.08046v117.70115z" fill="#00d981" /><path class="animate-change-color" d="M464.684138 135.827126l22.363218-19.53839 40.018391 62.381609a30.131494 30.131494 0 0 0 25.423448 13.888735h2.824828a30.131494 30.131494 0 0 0 25.188046-19.067586l20.715402-79.095172 21.186207 74.387126v2.118621a30.366897 30.366897 0 0 0 52.494713 6.826667l30.366896-57.202759 13.182529 12.947126a30.131494 30.131494 0 0 0 21.186207 8.709886h57.673563a23.54023 23.54023 0 0 0 23.54023-23.54023 23.54023 23.54023 0 0 0-23.54023-23.54023h-50.140689l-23.54023-23.54023a30.366897 30.366897 0 0 0-45.668046 3.766437l-21.42161 40.01839L629.465747 19.302989a30.131494 30.131494 0 0 0-28.012873-19.067587 30.131494 30.131494 0 0 0-28.012874 19.067587l-26.60046 101.693793-29.660689-47.08046a30.366897 30.366897 0 0 0-20.48-13.653333 30.837701 30.837701 0 0 0-23.54023 6.826666l-32.250115 28.248276h-60.027586a23.54023 23.54023 0 0 0-23.54023 23.54023 23.54023 23.54023 0 0 0 23.54023 23.54023h66.148046a31.308506 31.308506 0 0 0 17.655172-6.591265zM776.121379 532.950805H404.421149A121.232184 121.232184 0 0 0 282.482759 639.352644a117.701149 117.701149 0 0 0 117.701149 129.000459h371.70023a121.232184 121.232184 0 0 0 121.938391-106.401839 117.701149 117.701149 0 0 0-117.70115-129.000459z m0 188.321839H402.302529a72.503908 72.503908 0 0 1-72.268506-56.496552 70.62069 70.62069 0 0 1 68.972874-84.744828h373.81885a72.503908 72.503908 0 0 1 72.268506 56.496552 70.62069 70.62069 0 0 1-68.502069 84.744828z" /></svg>
             </div>
-
-            <nav class="hidden header__nav">
-                <ul class="flex gap-2 nav__list">
-                    <li>
-                        <a href="./" class="nav__link nav__link--active">Inicio</a>        
-                    </li>
-                    <li>
-                        <a href="./" class="nav__link">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="./" class="nav__link">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
 
             <button class="w-7 h-7 flex flex-col justify-center items-center gap-[4px] border-1 border-green-400 rounded-lg px-1 relative hover:cursor-pointer header__hamburger menu-exit" id="btn-menu" aria-haspopup="true" aria-expanded="false" aria-controls="menu-desplegable">
                 
@@ -87,7 +73,7 @@ export function elementHeroContainer() {
                 <div class="w-full bg-white/2 backdrop-blur-sm flex flex-col justify-center p-4 border-y-2 border-green-400 rounded-tl-xl rounded-br-xl relative lg:w-5/6 lg:h-1/3  hero__content">
                     <div class="w-1/3 h-3 bg-green-400 rounded-b-md absolute top-0 left-6"></div>
                     <h1 class="w-full text-3xl text-end text-green-400 text-center font-bold py-1 mb-2 hero__title">Omar Rodriguez</h1>
-                    <p class="pb-5 hero__description">Desarrollador web en formación, con mucho amor por la tecnologia y el software.</p>            
+                    <p class="pb-5 hero__description">Desarrollador web en formación, con mucho amor por la tecnología y el software.</p>            
                     <button class="text-sm text-black-bluish font-semibold absolute bottom-0 right-8 bg-green-400 rounded-t-xl px-4 py-1 hover:cursor-pointer button-project">Proyectos</button>
                 </div>
             </div>
@@ -105,7 +91,7 @@ export function elementBlockquote() {
                 <h2 class="text-center text-2xl font-extrabold my-2 lg:text-xl lg:my-2 quote__subtitle">¡NUNCA PARES DE APRENDER!</h2>
 
                 <p class="text-center text-sm quote__text">
-                    Esta frase muy sonada en la comunidad de Platzi, no solo me ha motivado tambien me ha enseñado a ser constante con el aprendizaje. Creando en mi el habito de siempre querer aprender.
+                    Esta frase muy sonada en la comunidad de Platzi no solo me ha motivado, también me ha enseñado a ser constante con el aprendizaje, creando en mí el hábito de siempre querer aprender.
                 </p>
                 
                 <cite class="text-sm text-green-dark quote__author">— Platzi</cite>
@@ -140,16 +126,16 @@ export function elementSkill(img) {
 
 function elementArticle(title, img, demo, codigo) {
     return `
-        <article class="w-5/6 p-2 bg-white/2 backdrop-blur-sm border-1 border-b-2 border-green-400 rounded-xl lg:max-w-3/4 project">
+        <article class="w-5/6 p-2 bg-white/2 backdrop-blur-sm grid place-items-center border-1 border-b-2 border-green-400 rounded-xl lg:max-w-3/4 project">
             <div class="h-7 absolute -top-4 left-0 bg-green-400 text-black-bluish px-2 rounded-t-md rounded-tr-xl">
                 <h2 class="text-center text-base font-semibold pr-1 values__title">${title}</h2>
             </div>
             <p class="project__description">
             </p>
 
-            <div class="w-full grid place-items-center mt-4 project__container-image"><img class="w-5/6 project__image" src="${img}"></div>
+            <div class="w-5/6 mt-4 project__container-image"><img class="project__image" src="${img}"></div>
 
-            <div class="px-1 flex gap-3 justify-end my-3 project__technologies">
+            <div class="w-full px-1 flex gap-3 justify-end my-3 project__technologies">
                 <a class="text-xs flex items-center gap-1 p-1 border-1 border-r-3 border-b-3 border-green-400 project__technologies--demo" href="${demo}" target="_blank">
                     <svg class="size-4 fill-green-dark technologies--icon-demo" viewBox="0 0 24 24" id="curve-arrow-right-9" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><path id="secondary" d="M21.71,8.29l-3-3a1,1,0,0,0-1.42,1.42L18.59,8H16.71a11.78,11.78,0,0,0-10.6,6.55,1,1,0,0,0,.44,1.34A.93.93,0,0,0,7,16a1,1,0,0,0,.89-.55A9.81,9.81,0,0,1,16.71,10h1.88l-1.3,1.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l3-3A1,1,0,0,0,21.71,8.29Z"></path><path id="primary" d="M20,21H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3h8a1,1,0,0,1,0,2H4V19H20V16a1,1,0,0,1,2,0v3A2,2,0,0,1,20,21Z"></path></svg>
 
@@ -198,7 +184,7 @@ export function footer() {
                     <p class="text-sm sm:h-9 sm:flex sm:items-end footer__text">+57 304 301 5421</p>
                 </div>
                 <div class="mb-3 sm:h-full sm:m-0 footer__phone">
-                    <h4 class="font-semibold  footer__title">Gmail</h4>
+                    <h4 class="font-semibold  footer__title">Email</h4>
                     <p class="text-sm sm:h-9 sm:flex sm:items-end footer__text">omardev332@gmail.com</p>
                 </div>
                 <div class="mb-3 footer__redes">
@@ -225,7 +211,7 @@ export function footer() {
                         Al usar el formulario de la sección contacto, aceptas este flujo de comunicación técnica con <strong>Formspree</strong>. 
                         </p>
                     </div>
-                    <p class="w-1/2 footer__credits-text">© 2025 Hecho con ❤️</p>
+                    <p class="w-1/2 footer__credits-text">© 2026 Hecho con ❤️</p>
                 </div>
             </div>
             

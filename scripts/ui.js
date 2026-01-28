@@ -91,7 +91,7 @@ function renderAboutMe() {
             <h4 class="font-semibold">Enfoque</h4>
             <div class="ml-2 flex items-center">
               <img src="./assets/arrow-2.svg" class="size-2"/>
-              <p class="text-sm ml-1">Desarrollo Web</p>
+              <p class="text-sm ml-1">Desarrollo Web Frontend</p>
             </div>
           </li>
         </ul>
@@ -151,7 +151,7 @@ export function renderProjects() {
               <div class="w-5/6 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
             </div>
             <p class="text-center p-4 mt-2 sm:mt-4 mb-6 projects__description">
-              Cada proyecto representa el progreso de mi aprendizaje, implementando conceptos aprendidos y buenas practicas aprendidas, ya que siempre busco hacer codigo de calidad y facil de mantener.
+              Cada proyecto representa el progreso de mi aprendizaje, implementando conceptos aprendidos, ya que siempre busco hacer código de calidad y fácil de mantener.
             </p>
             <div class="p-2 m-4 grid grid-cols-1 place-items-center gap-y-10 lg:grid-cols-2 lg:gap-y-14 lg:gap-x-0 projects__grid">
               ${newprojectsElements}
@@ -170,7 +170,7 @@ export function renderContact() {
               <div class="w-3/5 h-3 absolute -bottom-[12px] bg-black-bluish border-x-1 border-b-1 border-green-400 rounded-b-full"></div>
           </div>
           <p class="text-center p-4 my-2 lg:mt-4 lg:mb-6 contact__description">
-            Disponible para participar en proyectos de desarrollo web frontend y crear páginas web basicas.
+            Disponible para participar en proyectos de desarrollo web frontend y crear páginas web básicas.
           </p>
           <div class="grid place-items-center sm:m-4">
             ${form}
@@ -179,12 +179,3 @@ export function renderContact() {
       </section> 
     `;
 };
-
-//Hola, soy Omar Junior Rodríguez Pérez, un aprendiz de <strong>Desarrollo Web</strong> autodidacta de 23 años, residente en Barranquilla, Colombia.
-//<p class="about__intro">
-//Soy un joven apasionado por la tecnología y enfocado en el desarrollo frontend. Busco constantemente oportunidades para aprender de otros desarrolladores, compartir conocimientos y colaborar en proyectos.
-// </p>
-//div class="w-1/3 h-6 bg-black-bluish absolute -bottom-1 -left-1 border-t-1 border-r-1 border-green-400 rounded-tr-lg"></div>
-//<div class="size-8 absolute bottom-4 -left-1 border-b-4 border-l-4 border-green-400"></div>//
-
-/*<div class="sm:w-full sm:h-full sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-12 sm:col-start-2 sm:row-start-1 sm:row-span-2">*/
