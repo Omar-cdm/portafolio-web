@@ -91,7 +91,7 @@ export function elementBlockquote() {
                 <h2 class="text-center text-2xl font-extrabold my-2 lg:text-xl lg:my-1 quote__subtitle">¡NUNCA PARES DE APRENDER!</h2>
 
                 <p class="text-center text-sm lg:text-base quote__text">
-                    Esta frase muy sonada en la comunidad de Platzi no solo me ha motivado, también me ha enseñado a ser constante con el aprendizaje, creando en mí el hábito de siempre querer aprender.
+                    Esta frase muy sonada en la comunidad de Platzi no solo me ha motivado, también me ha enseñado a ser constante con el aprendizaje.
                 </p>
                 
                 <cite class="text-sm text-green-dark quote__author">— Platzi</cite>
@@ -133,7 +133,7 @@ function elementArticle(title, img, demo, codigo) {
             <p class="project__description">
             </p>
 
-            <div class="w-5/6 mt-4 project__container-image"><img class="project__image" src="${img}"></div>
+            <div class="w-46 h-26 mt-4 flex items-center sm:w-80 sm:h-46 lg:w-58 lg:h-36 project__container-image"><img class="project__image" src="${img}"></div>
 
             <div class="w-full px-1 flex gap-3 justify-end my-3 project__technologies">
                 <a class="text-xs flex items-center gap-1 p-1 border-1 border-r-3 border-b-3 border-green-400 lg:text-sm project__technologies--demo" href="${demo}" target="_blank">
