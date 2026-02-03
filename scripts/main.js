@@ -59,7 +59,7 @@ function writeText() {
             clearInterval(nInterval);
             setTimeout(() => {
                 renderSection('Inicio');
-                activeBtnProject();
+                //activeBtnProject();   
             }, 400);
         }
     }, 140);
@@ -70,6 +70,7 @@ function renderSection(section) {
     window.scrollTo(0,0);
     if (section == 'Inicio') {
         main.innerHTML = renderHero();
+        activeBtnProject();
     } else if (section == 'Proyectos') {
         main.innerHTML = renderProjects();
     } else {
