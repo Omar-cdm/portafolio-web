@@ -1,40 +1,42 @@
-import { welcome,renderHero, renderProjects, renderContact } from './ui.js';
-import { header, footer } from './components-ui.js';
+/*import { welcome,renderHero, renderProjects, renderContact } from './ui.js';
 import { animation } from './add-animations.js';
+//new structure
+import { header } from '/src/layout/header/header-ui.js';
+import { footer } from '/src/layout/footer/footer-ui.js';
 
 const root = document.querySelector('#root');
 
 renderLayout();
 
 const main = document.querySelector('main');
-const links = document.querySelectorAll('.link');
-const btnMenu = document.querySelector('#btn-menu');
-const menuDesplegable = document.querySelector('#menu-desplegable');
+//const links = document.querySelectorAll('.link');
+//const btnMenu = document.querySelector('#btn-menu');
+//const menuDesplegable = document.querySelector('#menu-desplegable');
 
 writeText()
 animation()
 
-document.addEventListener('click', (e) => {
+/*document.addEventListener('click', (e) => {
   if (!btnMenu.contains(e.target) && !btnMenu.contains(e.target)) {
     menuDesplegable.classList.add('hidden');
     btnMenu.setAttribute('aria-expanded', 'false');
   }
-});
+});*/
 
-btnMenu.addEventListener('click', () => {
+/*btnMenu.addEventListener('click', () => {
     const expandir = btnMenu.getAttribute('aria-expanded') === 'true';
     btnMenu.setAttribute('aria-expanded', !expandir);
     menuDesplegable.classList.toggle('hidden');
-});
+});*/
 
-links.forEach(link => {
+/*links.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         renderSection(e.target.innerText)
     })
-});
+});*/
 
-function renderLayout() {
+/*function renderLayout() {
     root.innerHTML =  `
         ${header()}
         <main class="flex justify-center">
@@ -84,4 +86,18 @@ function activeBtnProject() {
     btnProject.addEventListener('click', () => {
         renderSection('Proyectos')
     });
+};*/
+
+//----------  NEW CODIG  ----------
+
+import { initLayout } from "/src/layout/index.js";
+import { initWelcome } from "/src/features/welcome/index.js";
+import { initObserver } from "/src/infrastructure/utils/observer.js";
+
+function initApp() {
+    initLayout();
+    initWelcome();
+    initObserver();
 };
+
+initApp();

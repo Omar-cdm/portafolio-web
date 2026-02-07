@@ -1,6 +1,5 @@
-let observer;
-
-export function animation() {
+export function initObserver() {
+    let observer;
     const elements = document.querySelector('.footer');    
     observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -13,5 +12,4 @@ export function animation() {
     });
     observer.observe(elements);
 
-}
-
+};
