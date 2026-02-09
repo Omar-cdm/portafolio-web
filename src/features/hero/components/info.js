@@ -23,7 +23,7 @@ export function info() {
           </div>
         </li>
         <li class="mb-2">
-          <h4 class="font-semibold lg:text-lg">Ocupación/h4>
+          <h4 class="font-semibold lg:text-lg">Ocupación</h4>
           <div class="ml-2 flex items-center">
             <img src="./assets/arrow-2.svg" class="size-2"/>
             <p class="text-sm ml-1 lg:text-base">Estudiante Autodidacta</p>
